@@ -38,15 +38,6 @@ def handle():
     try:
         if content == "about":
             return {"content": "Hello! This is BOGO bot! Please type 'help' for help!"}
-        elif content == "help":
-            return {
-                "content": """
-    Commands:
-    - help: show help
-    - get url: get BOGO url
-    - signup: sign up for this thing
-    """
-            }
         elif content == "subscribe":
 
             user_data = db_utils.get_user(supabase_client, sender_id)
@@ -84,9 +75,16 @@ def handle():
 
             else:
                 return {"content": "You've never subscribed!"}
+        else:
+            return {
+                "content": """
+Commands:
+* `show deals`: to display available BOGO deals
+* `subscribe`: to start getting matched with other BOGOBot users for pair lunching
+* `unsubscribe`: to stop getting matched
+"""
+            }
 
     except PostgrestAPIError as e:
         print(e)
         return {"content": "Oopsy woopsy, I (or you) made a fucky wucky"}
-
-    return {"content": f"hello, {sender_full_name}"}
