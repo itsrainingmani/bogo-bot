@@ -1,22 +1,24 @@
+import sys
 import zulip
+import os
+
+import db_utils
+
 from flask import Flask, request
 from pprint import pprint
-import json
 from dotenv import load_dotenv
-import os
-import supabase
 from supabase import create_client, Client, PostgrestAPIError
-import db_utils
 
 load_dotenv()
 
 url = os.environ.get("SUPABASE_URL")
 key = os.environ.get("SUPABASE_KEY")
-supabase_client: Client = create_client(url, key)  # type: ignore
 
-zulip_client = zulip.Client(
-    config_file="zuliprc", client=f"RC UberEats BOGO Pairing Bot"
-)
+if not url or not key:
+    pprint("Supabase Env Variables not present")
+    sys.exit(1)
+supabase_client: Client = create_client(url, key)
+
 app = Flask(__name__)
 
 
@@ -86,5 +88,5 @@ Commands:
             }
 
     except PostgrestAPIError as e:
-        print(e)
-        return {"content": "Oopsy woopsy, I (or you) made a fucky wucky"}
+        pprint(e)
+        return {"content": ";-( Something went wrong 🥺 👉🏼👈🏼"}
