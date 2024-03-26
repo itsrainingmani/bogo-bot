@@ -1,6 +1,7 @@
 import zulip
 from flask import Flask, request
 import json
+from pprint import pprint
 
 client = zulip.Client(config_file="zuliprc", client=f"RC UberEats BOGO Pairing Bot")
 
@@ -9,14 +10,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    print(request)
+    pprint(request)
     return "<p>RC UberEats BOGO Pairing Bot!</p>"
 
 
 @app.route("/webhooks", methods=["GET", "POST"])
 def handle():
     response = request.get_json()
-    print(response)
+    pprint(response)
     sender = response["message"]["sender_full_name"]
     content = response["message"]["content"]
 

@@ -1,0 +1,41 @@
+{
+	"bot_email": "bogobot-mani-bot@hee.com",
+	"bot_full_name": "bogo-bot-mani",
+	"data": "help",
+	"message": {
+		"avatar_url": "https://zulip-avatars.s3.amazonaws.com/13/292df737050d30b527c863e89ea9db85833041a6?version=2",
+		"client": "ZulipElectron",
+		"content": "help",
+		"content_type": "text/x-markdown",
+		"display_recipient": [
+			{
+				"email": "bogobot-mani-bot@hee.com",
+				"full_name": "bogo-bot-mani",
+				"id": 981273,
+				"is_mirror_dummy": false
+			},
+			{
+				"email": "heehee@hee.com",
+				"full_name": "heehee (W2'24)",
+				"id": 324324,
+				"is_mirror_dummy": false
+			}
+		],
+		"id": 32423432,
+		"is_me_message": false,
+		"reactions": [],
+		"recipient_id": 32423432,
+		"rendered_content": "<p>help</p>",
+		"sender_email": "heehee@hee.com",
+		"sender_full_name": "heeeeeee",
+		"sender_id": 343243,
+		"sender_realm_str": "recurse",
+		"subject": "",
+		"submessages": [],
+		"timestamp": 1711470908,
+		"topic_links": [],
+		"type": "private"
+	},
+	"token": "heehee",
+	"trigger": "direct_message"
+}

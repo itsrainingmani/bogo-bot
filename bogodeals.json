@@ -1,0 +1,3770 @@
+[
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/moonbowls-healthy-korean-bowls-bridge-st/d8CWVYDzXySpFNvEAIzWtQ",
+		"name": "moonbowls (Healthy Korean Bowls- Bridge St)",
+		"servesCuisine": [
+			"Healthy",
+			"Asian",
+			"Vegan",
+			"Gluten Free",
+			"Korean",
+			"Vegetarian"
+		],
+		"priceRange": "",
+		"image": [
+			"https://tb-static.uber.com/prod/image-proc/processed_images/fa86729f6465c0bd3af8b597b2734f36/97ef7458dde62fa918635bc21265d9f5.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/fa86729f6465c0bd3af8b597b2734f36/a70f5c9df440d10213e93244e9eb7cad.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/fa86729f6465c0bd3af8b597b2734f36/97e6648b3593c29cb4a6335f976e6d84.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/fa86729f6465c0bd3af8b597b2734f36/93b5fd796682c6d5302cd5bec164fe90.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/fa86729f6465c0bd3af8b597b2734f36/719c6bd2757b08684c0faae44d43159d.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/fa86729f6465c0bd3af8b597b2734f36/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/moonbowls-healthy-korean-bowls-bridge-st/d8CWVYDzXySpFNvEAIzWtQ?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Brooklyn",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "383 Bridge Street"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.6915233,
+			"longitude": -73.9853371
+		},
+		"telephone": "+13239874617",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.8,
+			"reviewCount": "339"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday",
+					"Sunday"
+				],
+				"opens": "10:0",
+				"closes": "22:0"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "e48cbf48-6491-5e16-895b-89e52254be4c",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/576c04e28212bc74c3465b295a169a02/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+				"title": "BBQ Chicken Bowl",
+				"itemDescription": "Grilled BBQ chicken with your choice of base and three sides topped with green onions, sesame seeds, and a lemon wedge. Served with a sauce of your choice. (Gluten-free)",
+				"price": 1550,
+				"priceTagline": {
+					"text": "$15.50",
+					"textFormat": "<span>$15.50</span>",
+					"accessibilityText": "$15.50"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "BBQ Chicken Bowl",
+					"textFormat": "<span>BBQ Chicken Bowl <img src=\"https://d4p17acsd5wyj.cloudfront.net/bazaar/grain.png\" width=\"14\" height=\"14\" vertical-align=\"middle\"/></span>",
+					"accessibilityText": "BBQ Chicken Bowl, GLUTEN_FREE"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"numAlcoholicItems": 0,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Grilled BBQ chicken with your choice of base and three sides topped with green onions, sesame seeds, and a lemon wedge. Served with a sauce of your choice. (Gluten-free)",
+					"textFormat": "<span style=\"color:#757575\">Grilled BBQ chicken with your choice of base and three sides topped with green onions, sesame seeds, and a lemon wedge. Served with a sauce of your choice. (Gluten-free)</span>"
+				},
+				"subsectionUuid": "a4d2c74d-512f-45da-a75a-c5b22242d11a",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "38fa8688-407c-44ba-9dbd-a66d427f9aea",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "144ed39b-97df-4258-95b6-f5cacb95bedb"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$15.50",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 87% (110)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$15.50, 87% (110)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "BBQ Chicken Bowl",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "BBQ Chicken Bowl"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 0 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/375-chicken-n-fries-downtown-brooklyn/8HtXnha6XmaizC8E-bkp1A",
+		"name": "375° Chicken 'n Fries Downtown Brooklyn",
+		"servesCuisine": ["Wings", "Comfort Food", "American"],
+		"priceRange": "",
+		"image": [
+			"https://tb-static.uber.com/prod/image-proc/processed_images/ff0bdc705630e06cbee52ad8e7016fb5/61e8d264e9409914f90881b13f54d0ac.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/ff0bdc705630e06cbee52ad8e7016fb5/aa13fff7e2466014ca51307be81e7738.jpeg"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/375-chicken-n-fries-downtown-brooklyn/8HtXnha6XmaizC8E-bkp1A?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "New York",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "158 Lawrence Street"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.691436,
+			"longitude": -73.986278
+		},
+		"telephone": "+18482002510",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.6,
+			"reviewCount": "96"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Sunday",
+				"opens": "0:0",
+				"closes": "1:45"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Sunday",
+				"opens": "11:0",
+				"closes": "23:45"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday"],
+				"opens": "11:0",
+				"closes": "23:45"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Thursday",
+				"opens": "11:0",
+				"closes": "23:59"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Friday",
+				"opens": "0:0",
+				"closes": "0:45"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Friday",
+				"opens": "11:0",
+				"closes": "23:59"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Saturday",
+				"opens": "0:0",
+				"closes": "1:45"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Saturday",
+				"opens": "11:0",
+				"closes": "23:59"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "a3cde530-5b04-5ccf-9f66-02cabae499e3",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1c718625cadfb546710cd6792c010160/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+				"title": "Single Tender Slider",
+				"itemDescription": "One Tender Slider",
+				"price": 900,
+				"priceTagline": {
+					"text": "$9.00",
+					"textFormat": "<span>$9.00</span>",
+					"accessibilityText": "$9.00"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Single Tender Slider",
+					"textFormat": "<span>Single Tender Slider</span>",
+					"accessibilityText": "Single Tender Slider"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "One Tender Slider",
+					"textFormat": "<span style=\"color:#757575\">One Tender Slider</span>"
+				},
+				"subsectionUuid": "bc0026f8-ede6-5677-9963-d534b4e53a8d",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "4976847d-7cca-53ef-b497-c0eedaf9453c",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "33aad072-8075-483c-93fa-1899108be82f"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$9.00",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 90% (11)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$9.00, 90% (11)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Single Tender Slider",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Single Tender Slider"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 0 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/tio-pio/1KPeDTyZTbyJoJ_iwz0Vtg",
+		"name": "Tio Pio",
+		"servesCuisine": [
+			"Peruvian",
+			"Latin American",
+			"Exclusive to Eats",
+			"Group Friendly"
+		],
+		"priceRange": "$",
+		"image": [
+			"https://tb-static.uber.com/prod/image-proc/processed_images/7c479d6919cb11cce4f9319d53faa02e/ffd640b0f9bc72838f2ebbee501a5d4b.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/7c479d6919cb11cce4f9319d53faa02e/820883a48567670acbd720bc76391291.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/7c479d6919cb11cce4f9319d53faa02e/1153e79d90aa7e9dd2351e1aa8dc4e16.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/7c479d6919cb11cce4f9319d53faa02e/1651207c9cb2a7942b37b3f3e4a0b899.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/7c479d6919cb11cce4f9319d53faa02e/445a4b2618e10f7db95d4f17a85b117d.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/7c479d6919cb11cce4f9319d53faa02e/c73ecc27d2a9eaa735b1ee95304ba588.jpeg"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/tio-pio/1KPeDTyZTbyJoJ_iwz0Vtg?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Brooklyn",
+			"addressRegion": "NY",
+			"postalCode": "11201-5204",
+			"addressCountry": "US",
+			"streetAddress": "78 Willoughby St"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.6921904,
+			"longitude": -73.9856816
+		},
+		"telephone": "+17188753097",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.7,
+			"reviewCount": "64"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+				"opens": "6:0",
+				"closes": "12:0"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+				"opens": "10:0",
+				"closes": "16:0"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Saturday",
+				"opens": "8:0",
+				"closes": "12:0"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Saturday",
+				"opens": "10:30",
+				"closes": "14:0"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "b5521988-c2d4-41b1-8b5c-eb29a8517dd3",
+				"imageUrl": "",
+				"title": "Chocolate Cake",
+				"itemDescription": "",
+				"price": 650,
+				"priceTagline": {
+					"text": "$6.50",
+					"textFormat": "<span>$6.50</span>",
+					"accessibilityText": "$6.50"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Chocolate Cake",
+					"textFormat": "<span>Chocolate Cake</span>",
+					"accessibilityText": "Chocolate Cake"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": false,
+				"numAlcoholicItems": 0,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"subsectionUuid": "79e97038-9c04-4b15-9640-39359b5f41aa",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "848ccb73-0c83-473e-b5c4-f0d0877ab435",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "25a3387e-c4fe-4183-b8c7-5b9b68398686"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$6.50",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$6.50"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Chocolate Cake",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Chocolate Cake"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 1 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/stickys-dt-bk-9/qaFDO4C4TRaVmTEhOoaxxw",
+		"name": "Sticky's - DT BK (9)",
+		"servesCuisine": [
+			"American",
+			"Chicken",
+			"Comfort Food",
+			"Sandwich",
+			"Salads",
+			"Healthy"
+		],
+		"priceRange": "$",
+		"image": [
+			"https://d1ralsognjng37.cloudfront.net/e1657997-032f-4427-8ef9-97ce58e37f6b",
+			"https://d1ralsognjng37.cloudfront.net/eff9e87d-c431-4b1f-bda3-c372fba8d5d8",
+			"https://d1ralsognjng37.cloudfront.net/46b3d797-16d9-4aa4-a2c4-530f6b41ac46",
+			"https://d1ralsognjng37.cloudfront.net/97cb2971-5a5e-4293-b521-5ec996c6c265",
+			"https://d1ralsognjng37.cloudfront.net/c6b6d496-2865-4833-983e-97ebb34d3960",
+			"https://d1ralsognjng37.cloudfront.net/d4daec2f-0369-4eee-8c7e-f170bfc1ccf9"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/stickys-dt-bk-9/qaFDO4C4TRaVmTEhOoaxxw?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Brooklyn",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "66 Willoughby Street"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.6921934,
+			"longitude": -73.9860567
+		},
+		"telephone": "+17185966181",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.8,
+			"reviewCount": "398"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+				"opens": "11:0",
+				"closes": "23:45"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Friday", "Saturday"],
+				"opens": "11:0",
+				"closes": "0:45"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "b5f6c0a3-b5b2-538b-a43e-18255a837720",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/ff7aaabe981d13a7e8471f8185a63c85/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
+				"title": "3pc Chicken Fingers",
+				"itemDescription": "3 Chicken Fingers with your choice of sauces",
+				"price": 875,
+				"priceTagline": {
+					"text": "$8.75",
+					"textFormat": "<span>$8.75</span>",
+					"accessibilityText": "$8.75"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "3pc Chicken Fingers",
+					"textFormat": "<span>3pc Chicken Fingers</span>",
+					"accessibilityText": "3pc Chicken Fingers"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "3 Chicken Fingers with your choice of sauces",
+					"textFormat": "<span style=\"color:#757575\">3 Chicken Fingers with your choice of sauces</span>"
+				},
+				"subsectionUuid": "a27aa045-58b4-583b-9cd1-b7fb82a8c096",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "8eb46557-b02c-5833-a6c5-c04284ccdcff",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "b04c1154-d59d-4c83-981f-125144a139d8"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$8.75",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 85% (171)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$8.75, 85% (171)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "3pc Chicken Fingers",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "3pc Chicken Fingers"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 3 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/guac-time-mexican-grill-jay-street/qeLSOZMuV-OH85y_lmHqcw",
+		"name": "Guac Time Mexican Grill - ( Jay Street )",
+		"servesCuisine": [
+			"Mexican",
+			"Healthy",
+			"Tacos",
+			"Group Friendly",
+			"Exclusive to Eats"
+		],
+		"priceRange": "",
+		"image": [
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c69601e90d1562093d7960aecf7ad374/97ef7458dde62fa918635bc21265d9f5.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c69601e90d1562093d7960aecf7ad374/a70f5c9df440d10213e93244e9eb7cad.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c69601e90d1562093d7960aecf7ad374/97e6648b3593c29cb4a6335f976e6d84.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c69601e90d1562093d7960aecf7ad374/93b5fd796682c6d5302cd5bec164fe90.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c69601e90d1562093d7960aecf7ad374/719c6bd2757b08684c0faae44d43159d.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c69601e90d1562093d7960aecf7ad374/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/guac-time-mexican-grill-jay-street/qeLSOZMuV-OH85y_lmHqcw?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Brooklyn",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "391 Jay Street"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.6919512,
+			"longitude": -73.9871039
+		},
+		"telephone": "+13472944227",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.7,
+			"reviewCount": "500"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday",
+					"Sunday"
+				],
+				"opens": "10:30",
+				"closes": "3:0"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "13a8c2bc-45a6-418b-9504-490db9c0b3fd",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/d6a18f5491922236e89fe6dfa1589102/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
+				"title": "Guac Time Burrito",
+				"itemDescription": "",
+				"price": 1299,
+				"priceTagline": {
+					"text": "$12.99",
+					"textFormat": "<span>$12.99</span>",
+					"accessibilityText": "$12.99"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Guac Time Burrito",
+					"textFormat": "<span>Guac Time Burrito</span>",
+					"accessibilityText": "Guac Time Burrito"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"numAlcoholicItems": 0,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"subsectionUuid": "b826e5bd-02de-4895-82eb-2f6e3ba52ef6",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "66305d9c-395f-4ee8-82f8-2241f4f036d2",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "059decb5-f4b3-44bf-8a3c-3c59475eee40"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$12.99",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 90% (463)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$12.99, 90% (463)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Guac Time Burrito",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Guac Time Burrito"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 0 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			},
+			{
+				"uuid": "1cf3ec05-a7b8-463c-9ccd-2502179d2223",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/47fe6daa48cbb856b9545544840a6c21/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
+				"title": "Guac Time Burrito Bowl",
+				"itemDescription": "",
+				"price": 1299,
+				"priceTagline": {
+					"text": "$12.99",
+					"textFormat": "<span>$12.99</span>",
+					"accessibilityText": "$12.99"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Guac Time Burrito Bowl",
+					"textFormat": "<span>Guac Time Burrito Bowl</span>",
+					"accessibilityText": "Guac Time Burrito Bowl"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"numAlcoholicItems": 0,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"subsectionUuid": "b826e5bd-02de-4895-82eb-2f6e3ba52ef6",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "66305d9c-395f-4ee8-82f8-2241f4f036d2",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "059decb5-f4b3-44bf-8a3c-3c59475eee40"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$12.99",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 91% (219)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$12.99, 91% (219)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Guac Time Burrito Bowl",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Guac Time Burrito Bowl"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 1 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			},
+			{
+				"uuid": "f9a41a44-a840-48c3-9d02-d5f9d672c7ca",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/d414a4839829ea8b027f265a20393744/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
+				"title": "Guac Time Crunchwrap",
+				"itemDescription": "",
+				"price": 1499,
+				"priceTagline": {
+					"text": "$14.99",
+					"textFormat": "<span>$14.99</span>",
+					"accessibilityText": "$14.99"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Guac Time Crunchwrap",
+					"textFormat": "<span>Guac Time Crunchwrap</span>",
+					"accessibilityText": "Guac Time Crunchwrap"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"numAlcoholicItems": 0,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"subsectionUuid": "b826e5bd-02de-4895-82eb-2f6e3ba52ef6",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "66305d9c-395f-4ee8-82f8-2241f4f036d2",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "059decb5-f4b3-44bf-8a3c-3c59475eee40"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$14.99",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 85% (14)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$14.99, 85% (14)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Guac Time Crunchwrap",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Guac Time Crunchwrap"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 2 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			},
+			{
+				"uuid": "77abda77-6d9c-42af-9af8-49afd6fceb1f",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/cd00dee6ccb77cf1b1b15744b008e68e/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
+				"title": "Beef Birria Taco's 2(pcs)",
+				"itemDescription": "Comes with Birria Broth",
+				"price": 1499,
+				"priceTagline": {
+					"text": "$14.99",
+					"textFormat": "<span>$14.99</span>",
+					"accessibilityText": "$14.99"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Beef Birria Taco's 2(pcs)",
+					"textFormat": "<span>Beef Birria Taco&#39;s 2(pcs)</span>",
+					"accessibilityText": "Beef Birria Taco's 2(pcs)"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": false,
+				"numAlcoholicItems": 0,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Comes with Birria Broth",
+					"textFormat": "<span style=\"color:#757575\">Comes with Birria Broth</span>"
+				},
+				"subsectionUuid": "de35493f-c13b-4468-a48c-b6296b8130aa",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "66305d9c-395f-4ee8-82f8-2241f4f036d2",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "059decb5-f4b3-44bf-8a3c-3c59475eee40"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$14.99",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 82% (301)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$14.99, 82% (301)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Beef Birria Taco's 2(pcs)",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Beef Birria Taco's 2(pcs)"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 0 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			},
+			{
+				"uuid": "f2962cd9-3d40-41f5-9ca0-a118ca86a30e",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/cd00dee6ccb77cf1b1b15744b008e68e/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
+				"title": "Chicken Birria 2pc.",
+				"itemDescription": "Comes with Chicken broth",
+				"price": 1499,
+				"priceTagline": {
+					"text": "$14.99",
+					"textFormat": "<span>$14.99</span>",
+					"accessibilityText": "$14.99"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Chicken Birria 2pc.",
+					"textFormat": "<span>Chicken Birria 2pc.</span>",
+					"accessibilityText": "Chicken Birria 2pc."
+				},
+				"isSoldOut": false,
+				"hasCustomizations": false,
+				"numAlcoholicItems": 0,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Comes with Chicken broth",
+					"textFormat": "<span style=\"color:#757575\">Comes with Chicken broth</span>"
+				},
+				"subsectionUuid": "de35493f-c13b-4468-a48c-b6296b8130aa",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "66305d9c-395f-4ee8-82f8-2241f4f036d2",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "059decb5-f4b3-44bf-8a3c-3c59475eee40"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$14.99",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 97% (39)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$14.99, 97% (39)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Chicken Birria 2pc.",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Chicken Birria 2pc."
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 2 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/arepa-lady-deklab-market/C-VLQjeiQpSd7_1autxK9w",
+		"name": "Arepa Lady - Deklab Market",
+		"servesCuisine": ["Latin American", "Vegetarian", "Mexican"],
+		"priceRange": "",
+		"image": [
+			"https://d1ralsognjng37.cloudfront.net/590ca0b8-5fc0-402d-9209-4ddcac16778b.webp",
+			"https://d1ralsognjng37.cloudfront.net/ae873117-763d-49aa-a97f-9691e8290dff.webp",
+			"https://d1ralsognjng37.cloudfront.net/ebc4761c-0d47-4551-8668-85c9d338c898.webp",
+			"https://d1ralsognjng37.cloudfront.net/226bb8cb-9d29-43fb-bcc8-a6af56deef31.webp",
+			"https://d1ralsognjng37.cloudfront.net/1e72383b-8ea9-4655-91d3-e676d4889359.webp",
+			"https://d1ralsognjng37.cloudfront.net/10696809-76bb-40c6-916c-be32299d35dc.webp"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/arepa-lady-deklab-market/C-VLQjeiQpSd7_1autxK9w?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "New York",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "445 Albee Square W Brooklyn"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.6912244,
+			"longitude": -73.9828692
+		},
+		"telephone": "+17186350355",
+		"aggregateRating": {},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday",
+					"Sunday"
+				],
+				"opens": "11:0",
+				"closes": "22:0"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "22ad34ef-0c17-493d-b114-44f29346812f",
+				"imageUrl": "",
+				"title": "Arepa de Choclo",
+				"itemDescription": "",
+				"price": 700,
+				"priceTagline": {
+					"text": "$7.00",
+					"textFormat": "<span>$7.00</span>",
+					"accessibilityText": "$7.00"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Arepa de Choclo",
+					"textFormat": "<span>Arepa de Choclo</span>",
+					"accessibilityText": "Arepa de Choclo"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"subsectionUuid": "798d6be1-c83b-451a-bb68-d03045b06e7f",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "3ce4eef2-78ac-4fe4-8350-acc903e14cc0",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "a3b02ded-eace-49f3-800b-9c1ffad31388"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$7.00",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 80% (15)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$7.00, 80% (15)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Arepa de Choclo",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Arepa de Choclo"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 2 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/dan-and-johns-wings-dekalb-market/6OmAceIaV0GP_FlJloq-qA",
+		"name": "Dan and John's Wings - Dekalb market",
+		"servesCuisine": ["American", "Wings"],
+		"priceRange": "",
+		"image": [
+			"https://d1ralsognjng37.cloudfront.net/1240df18-7827-496d-a4ff-d3afee939953.jpeg",
+			"https://d1ralsognjng37.cloudfront.net/f52832cc-ec48-4c62-a074-d40df03397e6.jpeg",
+			"https://d1ralsognjng37.cloudfront.net/8dd6b9cd-bdd4-407c-a500-854020822434.jpeg",
+			"https://d1ralsognjng37.cloudfront.net/0e8762a9-4f1b-4202-bcd0-63b68132ca1e.jpeg",
+			"https://d1ralsognjng37.cloudfront.net/d4e84ea1-2c4b-4c29-89dc-ea74771748fe.jpeg",
+			"https://d1ralsognjng37.cloudfront.net/83cf68a3-e5bb-4e9f-b3fc-8dfc500c0568.jpeg"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/dan-and-johns-wings-dekalb-market/6OmAceIaV0GP_FlJloq-qA?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Brooklyn",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "445 Albee Square W #E34"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.6912851,
+			"longitude": -73.9828322
+		},
+		"telephone": "+16464684675",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.8,
+			"reviewCount": "26"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday",
+					"Sunday"
+				],
+				"opens": "11:0",
+				"closes": "21:45"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "3496aedc-2d50-597c-88e8-66ce0a951c2a",
+				"imageUrl": "",
+				"title": "Boneless Wings (5 Pieces)",
+				"itemDescription": "Choose one sauce flavor, served with celery and blue cheese or ranch",
+				"price": 899,
+				"priceTagline": {
+					"text": "$8.99",
+					"textFormat": "<span>$8.99</span>",
+					"accessibilityText": "$8.99"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Boneless Wings (5 Pieces)",
+					"textFormat": "<span>Boneless Wings (5 Pieces)</span>",
+					"accessibilityText": "Boneless Wings (5 Pieces)"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Choose one sauce flavor, served with celery and blue cheese or ranch",
+					"textFormat": "<span style=\"color:#757575\">Choose one sauce flavor, served with celery and blue cheese or ranch</span>"
+				},
+				"subsectionUuid": "3b3a426a-5790-43ed-8734-a95c93cdb497",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "3dc94afd-8a07-4ef3-b522-afa411a999cd",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "e1d8fd48-c47b-49cc-98c1-3f4bc32d89c3"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$8.99",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$8.99"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Boneless Wings (5 Pieces)",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Boneless Wings (5 Pieces)"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 0 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/naya-15-metrotech/RWJEUeisV8qn_uC9_DjmxQ",
+		"name": "Naya - 15 Metrotech",
+		"servesCuisine": [
+			"Mediterranean",
+			"Salads",
+			"Rolls",
+			"Group Friendly",
+			"Middle Eastern"
+		],
+		"priceRange": "",
+		"image": [
+			"https://tb-static.uber.com/prod/image-proc/processed_images/5447bdd06255974d0003c72df27070d7/97ef7458dde62fa918635bc21265d9f5.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/5447bdd06255974d0003c72df27070d7/a70f5c9df440d10213e93244e9eb7cad.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/5447bdd06255974d0003c72df27070d7/97e6648b3593c29cb4a6335f976e6d84.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/5447bdd06255974d0003c72df27070d7/93b5fd796682c6d5302cd5bec164fe90.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/5447bdd06255974d0003c72df27070d7/719c6bd2757b08684c0faae44d43159d.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/5447bdd06255974d0003c72df27070d7/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/naya-15-metrotech/RWJEUeisV8qn_uC9_DjmxQ?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Brooklyn",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "15 MetroTech Center"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.6938733,
+			"longitude": -73.9851977
+		},
+		"telephone": "+17187500589",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.8,
+			"reviewCount": "190"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+				"opens": "10:30",
+				"closes": "20:40"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "f5b0cff6-9336-59ba-a0e3-98806c4b4f6d",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/3e38025bfb4caa00c06ed5d24071d54b/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
+				"title": "NAYA Salad",
+				"itemDescription": "Build-Your-Own: Romaine lettuce or Spinach, Arugula & Cabbage mix with your choice of protein, toppings and homemade sauces",
+				"price": 1199,
+				"priceTagline": {
+					"text": "$11.99",
+					"textFormat": "<span>$11.99</span>",
+					"accessibilityText": "$11.99"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "NAYA Salad",
+					"textFormat": "<span>NAYA Salad</span>",
+					"accessibilityText": "NAYA Salad"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Build-Your-Own: Romaine lettuce or Spinach, Arugula & Cabbage mix with your choice of protein, toppings and homemade sauces",
+					"textFormat": "<span style=\"color:#757575\">Build-Your-Own: Romaine lettuce or Spinach, Arugula &amp; Cabbage mix with your choice of protein, toppings and homemade sauces</span>"
+				},
+				"subsectionUuid": "09604815-f040-5120-aef3-c38d229e2783",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "27ae8ec6-61c4-59ce-808a-14487657f5db",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "30b001e6-a9e9-41a6-bc86-9447e2723e1d"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$11.99",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 91% (57)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$11.99, 91% (57)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "NAYA Salad",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "NAYA Salad"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 2 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			},
+			{
+				"uuid": "0c753392-527c-570f-a137-1e105fc73a50",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/c6c4a346f7a89e9b697d69b58ee112a6/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
+				"title": "NAYA Bowl",
+				"itemDescription": "Build-Your-Own: Vermicelli rice or ruby wild rice with your choice of protein, toppings and homemade sauces.",
+				"price": 1199,
+				"priceTagline": {
+					"text": "$11.99",
+					"textFormat": "<span>$11.99</span>",
+					"accessibilityText": "$11.99"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "NAYA Bowl",
+					"textFormat": "<span>NAYA Bowl</span>",
+					"accessibilityText": "NAYA Bowl"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Build-Your-Own: Vermicelli rice or ruby wild rice with your choice of protein, toppings and homemade sauces.",
+					"textFormat": "<span style=\"color:#757575\">Build-Your-Own: Vermicelli rice or ruby wild rice with your choice of protein, toppings and homemade sauces.</span>"
+				},
+				"subsectionUuid": "09604815-f040-5120-aef3-c38d229e2783",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "27ae8ec6-61c4-59ce-808a-14487657f5db",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "30b001e6-a9e9-41a6-bc86-9447e2723e1d"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$11.99",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 92% (227)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$11.99, 92% (227)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "NAYA Bowl",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "NAYA Bowl"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 0 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			},
+			{
+				"uuid": "434e1d32-9cb3-50fd-a6b5-980aa1baa650",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/0ef2e468212f55a038c3e5ce3f2e946a/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
+				"title": "NAYA Roll",
+				"itemDescription": "Build-Your-Own: Daily baked pita bread with your choice of protein, toppings and homemade sauces.",
+				"price": 1099,
+				"priceTagline": {
+					"text": "$10.99",
+					"textFormat": "<span>$10.99</span>",
+					"accessibilityText": "$10.99"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "NAYA Roll",
+					"textFormat": "<span>NAYA Roll</span>",
+					"accessibilityText": "NAYA Roll"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Build-Your-Own: Daily baked pita bread with your choice of protein, toppings and homemade sauces.",
+					"textFormat": "<span style=\"color:#757575\">Build-Your-Own: Daily baked pita bread with your choice of protein, toppings and homemade sauces.</span>"
+				},
+				"subsectionUuid": "09604815-f040-5120-aef3-c38d229e2783",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "27ae8ec6-61c4-59ce-808a-14487657f5db",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "30b001e6-a9e9-41a6-bc86-9447e2723e1d"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$10.99",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 97% (44)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$10.99, 97% (44)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "NAYA Roll",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "NAYA Roll"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 1 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/shake-shack-downtown-brooklyn/4Td2mDmzQ7SgYczS2-yepg",
+		"name": "Shake Shack (Downtown Brooklyn)",
+		"servesCuisine": ["American", "Burgers", "Ice Cream", "Desserts"],
+		"priceRange": "$",
+		"image": [
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cbdea1754d4fdeba7226f7e11b6509cf/e39556ef1e4c4565bc6c7dbd8b90869c.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cbdea1754d4fdeba7226f7e11b6509cf/7915c4a78a9f94ed56316c7c4dc0ec89.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cbdea1754d4fdeba7226f7e11b6509cf/67b1ce06a25a64dc4a71581bb39c36c6.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cbdea1754d4fdeba7226f7e11b6509cf/f3376a06b92224efbe50167fb7cb61e4.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cbdea1754d4fdeba7226f7e11b6509cf/50446f64f31cbefe66558fc47f50a9d6.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cbdea1754d4fdeba7226f7e11b6509cf/c9252e6c6cd289c588c3381bc77b1dfc.jpeg"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/shake-shack-downtown-brooklyn/4Td2mDmzQ7SgYczS2-yepg?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Brooklyn",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "409 Fulton Street"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.6921068,
+			"longitude": -73.9886743
+		},
+		"telephone": "+17183077599",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.7,
+			"reviewCount": "500"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday",
+					"Sunday"
+				],
+				"opens": "10:30",
+				"closes": "23:0"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "d7f03416-e388-5caf-becd-4d7db07b48e3",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/4944e6d597e29383a6289606573024ad/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+				"title": "Korean BBQ Burger",
+				"itemDescription": "100% Angus beef cheeseburger topped with crispy sweet onions, fresh scallions and a savory Korean BBQ sauce on a toasted potato bun.",
+				"price": 1139,
+				"priceTagline": {
+					"text": "$11.39 • 690 - 980 Cal.",
+					"textFormat": "<span>$11.39<span style=\"color:#757575\"> • 690 - 980 Cal.</span></span>",
+					"accessibilityText": "$11.39, 690 - 980 Cal."
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Korean BBQ Burger",
+					"textFormat": "<span>Korean BBQ Burger</span>",
+					"accessibilityText": "Korean BBQ Burger"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "100% Angus beef cheeseburger topped with crispy sweet onions, fresh scallions and a savory Korean BBQ sauce on a toasted potato bun.",
+					"textFormat": "<span style=\"color:#757575\">100% Angus beef cheeseburger topped with crispy sweet onions, fresh scallions and a savory Korean BBQ sauce on a toasted potato bun.</span>"
+				},
+				"subsectionUuid": "a1d6ba72-20c0-53c5-820e-e1ec2115c3da",
+				"isAvailable": true,
+				"purchaseInfo": {
+					"purchaseOptions": [
+						{
+							"soldByUnit": { "measurementType": "MEASUREMENT_TYPE_COUNT" },
+							"itemQuantityAbbreviation": "",
+							"quantityConstraintsV2": {
+								"minPermitted": { "base": 100000, "exponent": -5 },
+								"maxPermitted": { "base": 25000000, "exponent": -5 },
+								"increment": { "base": 100000, "exponent": -5 },
+								"defaultQuantity": { "base": 100000, "exponent": -5 },
+								"minPermittedNumber": 1,
+								"maxPermittedNumber": 250,
+								"incrementNumber": 1,
+								"defaultQuantityNumber": 1
+							},
+							"purchasePriceV2": {
+								"base": { "high": 0, "low": 1139, "unsigned": false },
+								"exponent": -2
+							}
+						}
+					],
+					"pricingInfo": {}
+				},
+				"sectionUuid": "0cd45281-d8b7-5128-bfde-3532119debc5",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "f1f1af29-d121-4068-8a5a-4fcb94a7bc95"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$11.39",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 85% (28)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_TERTIARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": "690 - 980 Cal.",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_TERTIARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$11.39, 85% (28), 690 - 980 Cal."
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Korean BBQ Burger",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Korean BBQ Burger"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 0 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			},
+			{
+				"uuid": "8ca47497-98d3-5d28-b0bc-602cab33bc78",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/bc0460f6f1cee974e8d6aa2f457418a2/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+				"title": "Korean Style Fried Chicken Sandwich",
+				"itemDescription": "Crispy, white-meat chicken breast coated in a spicy and sweet Gochujang glaze, sprinkled with sesame seeds and topped with white kimchi slaw, featuring Choi’s Kimchi, on a toasted potato bun.",
+				"price": 1179,
+				"priceTagline": {
+					"text": "$11.79 • 600 Cal.",
+					"textFormat": "<span>$11.79<span style=\"color:#757575\"> • 600 Cal.</span></span>",
+					"accessibilityText": "$11.79, 600 Cal."
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Korean Style Fried Chicken Sandwich",
+					"textFormat": "<span>Korean Style Fried Chicken Sandwich</span>",
+					"accessibilityText": "Korean Style Fried Chicken Sandwich"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Crispy, white-meat chicken breast coated in a spicy and sweet Gochujang glaze, sprinkled with sesame seeds and topped with white kimchi slaw, featuring Choi’s Kimchi, on a toasted potato bun.",
+					"textFormat": "<span style=\"color:#757575\">Crispy, white-meat chicken breast coated in a spicy and sweet Gochujang glaze, sprinkled with sesame seeds and topped with white kimchi slaw, featuring Choi’s Kimchi, on a toasted potato bun.</span>"
+				},
+				"subsectionUuid": "2976a5a1-266c-5a6c-92e2-003b049103de",
+				"isAvailable": true,
+				"purchaseInfo": {
+					"purchaseOptions": [
+						{
+							"soldByUnit": { "measurementType": "MEASUREMENT_TYPE_COUNT" },
+							"itemQuantityAbbreviation": "",
+							"quantityConstraintsV2": {
+								"minPermitted": { "base": 100000, "exponent": -5 },
+								"maxPermitted": { "base": 25000000, "exponent": -5 },
+								"increment": { "base": 100000, "exponent": -5 },
+								"defaultQuantity": { "base": 100000, "exponent": -5 },
+								"minPermittedNumber": 1,
+								"maxPermittedNumber": 250,
+								"incrementNumber": 1,
+								"defaultQuantityNumber": 1
+							},
+							"purchasePriceV2": {
+								"base": { "high": 0, "low": 1179, "unsigned": false },
+								"exponent": -2
+							}
+						}
+					],
+					"pricingInfo": {}
+				},
+				"sectionUuid": "0cd45281-d8b7-5128-bfde-3532119debc5",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "f1f1af29-d121-4068-8a5a-4fcb94a7bc95"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$11.79",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 80% (20)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_TERTIARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": "600 Cal.",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_TERTIARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$11.79, 80% (20), 600 Cal."
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Korean Style Fried Chicken Sandwich",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Korean Style Fried Chicken Sandwich"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 0 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/mighty-quinns-bbq-downtown-brooklyn/p823GfYiSNq7NN-S52GwtQ",
+		"name": "Mighty Quinn's BBQ - Downtown Brooklyn",
+		"servesCuisine": ["BBQ", "Chicken"],
+		"priceRange": "",
+		"image": [
+			"https://tb-static.uber.com/prod/image-proc/processed_images/d9560bfec776d7ab91130d46279f6811/e39556ef1e4c4565bc6c7dbd8b90869c.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/d9560bfec776d7ab91130d46279f6811/7915c4a78a9f94ed56316c7c4dc0ec89.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/d9560bfec776d7ab91130d46279f6811/67b1ce06a25a64dc4a71581bb39c36c6.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/d9560bfec776d7ab91130d46279f6811/f3376a06b92224efbe50167fb7cb61e4.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/d9560bfec776d7ab91130d46279f6811/50446f64f31cbefe66558fc47f50a9d6.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/d9560bfec776d7ab91130d46279f6811/c9252e6c6cd289c588c3381bc77b1dfc.jpeg"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/mighty-quinns-bbq-downtown-brooklyn/p823GfYiSNq7NN-S52GwtQ?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "New York",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "1 Boerum Place"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.6914554,
+			"longitude": -73.9889704
+		},
+		"telephone": "+17189712139",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.6,
+			"reviewCount": "78"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Sunday",
+				"opens": "12:0",
+				"closes": "21:0"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+				"opens": "11:0",
+				"closes": "21:0"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Saturday",
+				"opens": "12:0",
+				"closes": "21:0"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "884abc07-322e-5d5b-8eca-d367535e0b7d",
+				"imageUrl": "",
+				"title": "Pulled Pork Empanadas",
+				"itemDescription": "",
+				"price": 995,
+				"priceTagline": {
+					"text": "$9.95",
+					"textFormat": "<span>$9.95</span>",
+					"accessibilityText": "$9.95"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Pulled Pork Empanadas",
+					"textFormat": "<span>Pulled Pork Empanadas</span>",
+					"accessibilityText": "Pulled Pork Empanadas"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"subsectionUuid": "2c3ab49c-1f48-5964-aeba-fac17c84671c",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "3cd0aa8c-b331-5336-b962-ac4927bdbd10",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "29cefe66-5008-4e4b-8699-8efec1b5fdf7"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$9.95",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 85% (20)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$9.95, 85% (20)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Pulled Pork Empanadas",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Pulled Pork Empanadas"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 23 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			},
+			{
+				"uuid": "dabc3073-48ac-5229-8dd4-0ff42c735690",
+				"imageUrl": "",
+				"title": "Mac & Cheese Empanadas",
+				"itemDescription": "",
+				"price": 995,
+				"priceTagline": {
+					"text": "$9.95",
+					"textFormat": "<span>$9.95</span>",
+					"accessibilityText": "$9.95"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Mac & Cheese Empanadas",
+					"textFormat": "<span>Mac &amp; Cheese Empanadas</span>",
+					"accessibilityText": "Mac & Cheese Empanadas"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"subsectionUuid": "2c3ab49c-1f48-5964-aeba-fac17c84671c",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "3cd0aa8c-b331-5336-b962-ac4927bdbd10",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "29cefe66-5008-4e4b-8699-8efec1b5fdf7"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$9.95",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 100% (8)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$9.95, 100% (8)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Mac & Cheese Empanadas",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Mac & Cheese Empanadas"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 24 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/panera-345-adams-street/hgiG0HxhSjOIrkZrqN2nEQ",
+		"name": "Panera (345 Adams Street )",
+		"servesCuisine": [
+			"Sandwiches",
+			"Family Meals",
+			"Pizza",
+			"American",
+			"Chicken"
+		],
+		"priceRange": "$$",
+		"image": [
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c74563d037f9a5858e9333f7bbee5e53/e39556ef1e4c4565bc6c7dbd8b90869c.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c74563d037f9a5858e9333f7bbee5e53/7915c4a78a9f94ed56316c7c4dc0ec89.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c74563d037f9a5858e9333f7bbee5e53/67b1ce06a25a64dc4a71581bb39c36c6.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c74563d037f9a5858e9333f7bbee5e53/f3376a06b92224efbe50167fb7cb61e4.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c74563d037f9a5858e9333f7bbee5e53/50446f64f31cbefe66558fc47f50a9d6.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/c74563d037f9a5858e9333f7bbee5e53/c9252e6c6cd289c588c3381bc77b1dfc.jpeg"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/panera-345-adams-street/hgiG0HxhSjOIrkZrqN2nEQ?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Brooklyn",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "345 Adams Street"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.6926042,
+			"longitude": -73.9887403
+		},
+		"telephone": "+17186430345",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.7,
+			"reviewCount": "80"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Sunday",
+				"opens": "8:0",
+				"closes": "15:30"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+				"opens": "7:0",
+				"closes": "19:30"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Saturday",
+				"opens": "8:0",
+				"closes": "15:30"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "f72da5ba-cbb0-5dc8-a331-1243d7cad8d4",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/31f76299d8e05fee0a3952f2ffb32b4f/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+				"title": "Mac & Cheese",
+				"itemDescription": "Bread Bowl (1150 Cal.), Small (480 Cal.), Large (960 Cal.) Tender shell pasta in a blend of rich cheeses including our tangy aged white cheddar cheese sauce. Allergens: Contains Wheat, Milk, Egg",
+				"price": 1059,
+				"priceTagline": {
+					"text": "$10.59",
+					"textFormat": "<span>$10.59</span>",
+					"accessibilityText": "$10.59"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Mac & Cheese",
+					"textFormat": "<span>Mac &amp; Cheese</span>",
+					"accessibilityText": "Mac & Cheese"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Bread Bowl (1150 Cal.), Small (480 Cal.), Large (960 Cal.) Tender shell pasta in a blend of rich cheeses including our tangy aged white cheddar cheese sauce. Allergens: Contains Wheat, Milk, Egg",
+					"textFormat": "<span style=\"color:#757575\">Bread Bowl (1150 Cal.), Small (480 Cal.), Large (960 Cal.) Tender shell pasta in a blend of rich cheeses including our tangy aged white cheddar cheese sauce. Allergens: Contains Wheat, Milk, Egg</span>"
+				},
+				"subsectionUuid": "26fdb300-5b2e-520e-affe-55036f54e7d4",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "c9ba5980-7c3e-585d-9159-0e9947cfb49a",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "3f8c3436-5fc2-42c7-b302-739d9ade64f2"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$10.59",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 91% (101)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$10.59, 91% (101)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Mac & Cheese",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Mac & Cheese"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 2 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Restaurant",
+		"@id": "https://www.ubereats.com/store/german-doner-kebab-gdk-columbus-park/Nd3vSNADU1SBuyyTv_oj-Q",
+		"name": "German Doner Kebab (GDK) - Columbus Park",
+		"servesCuisine": [
+			"European",
+			"Modern European",
+			"German",
+			"Sandwich",
+			"Sandwiches",
+			"Burgers",
+			"American",
+			"Halal"
+		],
+		"priceRange": "",
+		"image": [
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cae5481cfff0f52810819928d930d348/e39556ef1e4c4565bc6c7dbd8b90869c.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cae5481cfff0f52810819928d930d348/7915c4a78a9f94ed56316c7c4dc0ec89.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cae5481cfff0f52810819928d930d348/67b1ce06a25a64dc4a71581bb39c36c6.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cae5481cfff0f52810819928d930d348/f3376a06b92224efbe50167fb7cb61e4.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cae5481cfff0f52810819928d930d348/50446f64f31cbefe66558fc47f50a9d6.jpeg",
+			"https://tb-static.uber.com/prod/image-proc/processed_images/cae5481cfff0f52810819928d930d348/c9252e6c6cd289c588c3381bc77b1dfc.jpeg"
+		],
+		"potentialAction": {
+			"@type": "OrderAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.ubereats.com/store/german-doner-kebab-gdk-columbus-park/Nd3vSNADU1SBuyyTv_oj-Q?amp;utm_medium=organic",
+				"inLanguage": "English",
+				"actionPlatform": [
+					"https://schema.org/DesktopWebPlatform",
+					"https://schema.org/MobileWebPlatform"
+				]
+			},
+			"deliveryMethod": [
+				"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+				"http://purl.org/goodrelations/v1#DeliveryModePickUp"
+			]
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Brooklyn",
+			"addressRegion": "NY",
+			"postalCode": "11201",
+			"addressCountry": "US",
+			"streetAddress": "261 Joralemon Street"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 40.69248,
+			"longitude": -73.98976
+		},
+		"telephone": "+13476161957",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": 4.8,
+			"reviewCount": "99"
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"opens": "11:0",
+				"closes": "18:30"
+			}
+		],
+		"deals": [
+			{
+				"uuid": "b15773d4-b7f3-53d2-84a7-040d39f28814",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/e9ae990fe4145ea623c270025df6c800/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+				"title": "Doner Wrap",
+				"itemDescription": "Your choice of doner meats, fresh lettuce, tomato, onion and red cabbage and 3 signature sauces served in a flatbread wrap.",
+				"price": 1449,
+				"priceTagline": {
+					"text": "$14.49",
+					"textFormat": "<span>$14.49</span>",
+					"accessibilityText": "$14.49"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Doner Wrap",
+					"textFormat": "<span>Doner Wrap</span>",
+					"accessibilityText": "Doner Wrap"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Your choice of doner meats, fresh lettuce, tomato, onion and red cabbage and 3 signature sauces served in a flatbread wrap.",
+					"textFormat": "<span style=\"color:#757575\">Your choice of doner meats, fresh lettuce, tomato, onion and red cabbage and 3 signature sauces served in a flatbread wrap.</span>"
+				},
+				"subsectionUuid": "04cfb192-da6d-5e6f-83a3-6abd8f0b85d6",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "57e8f0e7-3094-536a-8b96-55977b972ad2",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "5bad97e3-a354-4423-a07c-08035b7d7b48"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$14.49",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 93% (15)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$14.49, 93% (15)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Doner Wrap",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Doner Wrap"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 1 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			},
+			{
+				"uuid": "1e6f791a-fc09-5936-a4a1-45fcd1aff00f",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/405140ecd3a4adaf32150fb988703242/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+				"title": "Flaming Fries",
+				"itemDescription": "French Fries coated with GDK Flaming Seasoning.",
+				"price": 449,
+				"priceTagline": {
+					"text": "$4.49",
+					"textFormat": "<span>$4.49</span>",
+					"accessibilityText": "$4.49"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "Flaming Fries",
+					"textFormat": "<span>Flaming Fries</span>",
+					"accessibilityText": "Flaming Fries"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "French Fries coated with GDK Flaming Seasoning.",
+					"textFormat": "<span style=\"color:#757575\">French Fries coated with GDK Flaming Seasoning.</span>"
+				},
+				"subsectionUuid": "cfee80f1-a860-5053-a70e-41262a6e0728",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "57e8f0e7-3094-536a-8b96-55977b972ad2",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "5bad97e3-a354-4423-a07c-08035b7d7b48"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$4.49",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 100% (12)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$4.49, 100% (12)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "Flaming Fries",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "Flaming Fries"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 1 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			},
+			{
+				"uuid": "7b65b37d-e78c-5263-ac19-4ba7c156874b",
+				"imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/c8fc6919be7a565112666055c0935341/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+				"title": "THE ORIGINAL",
+				"itemDescription": "Our Trademark kebab sandwich, a must try! Your choice of doner meats, fresh lettuce, tomato, onion, red cabbage and 3 signature sauces served in our handmade toasted sesame bread.",
+				"price": 1499,
+				"priceTagline": {
+					"text": "$14.99",
+					"textFormat": "<span>$14.99</span>",
+					"accessibilityText": "$14.99"
+				},
+				"spanCount": 2,
+				"displayType": "LIST",
+				"titleBadge": {
+					"text": "THE ORIGINAL",
+					"textFormat": "<span>THE ORIGINAL</span>",
+					"accessibilityText": "THE ORIGINAL"
+				},
+				"isSoldOut": false,
+				"hasCustomizations": true,
+				"itemPromotion": {
+					"buyXGetYItemPromotion": {
+						"buyQuantity": 1,
+						"getQuantity": 1,
+						"maxRedemptionCount": 10
+					},
+					"type": "buyXGetYItemPromotion"
+				},
+				"itemDescriptionBadge": {
+					"text": "Our Trademark kebab sandwich, a must try! Your choice of doner meats, fresh lettuce, tomato, onion, red cabbage and 3 signature sauces served in our handmade toasted sesame bread.",
+					"textFormat": "<span style=\"color:#757575\">Our Trademark kebab sandwich, a must try! Your choice of doner meats, fresh lettuce, tomato, onion, red cabbage and 3 signature sauces served in our handmade toasted sesame bread.</span>"
+				},
+				"subsectionUuid": "04cfb192-da6d-5e6f-83a3-6abd8f0b85d6",
+				"isAvailable": true,
+				"purchaseInfo": { "purchaseOptions": [], "pricingInfo": {} },
+				"sectionUuid": "57e8f0e7-3094-536a-8b96-55977b972ad2",
+				"promoInfo": {
+					"promoInfoLabel": {
+						"richTextElements": [
+							{
+								"text": {
+									"text": {
+										"text": "Buy 1, Get 1 Free",
+										"font": { "style": "LABEL_SMALL", "weight": "MEDIUM" },
+										"color": "CONTENT_POSITIVE"
+									},
+									"predefinedDecorations": null
+								},
+								"type": "text"
+							}
+						],
+						"accessibilityText": "Buy 1, Get 1 Free"
+					},
+					"promotionUUID": "3891c6a5-d35f-4ae6-9d06-671f47339270"
+				},
+				"quickAddConfig": {
+					"shouldShow": true,
+					"isInteractionEnabled": false,
+					"position": "BOTTOM_TRAILING"
+				},
+				"labelPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "$14.99",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " • ",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						},
+						{
+							"icon": {
+								"icon": {
+									"icon": "THUMB_UP_OUTLINE",
+									"color": "PRIMARY",
+									"size": "SPACING_UNIT_1_5X"
+								},
+								"alignment": "CENTERED"
+							},
+							"type": "icon"
+						},
+						{
+							"text": {
+								"text": {
+									"text": " 98% (53)",
+									"font": { "style": "PARAGRAPH_SMALL", "weight": "NORMAL" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "$14.99, 98% (53)"
+				},
+				"headingPrimary": {
+					"richTextElements": [
+						{
+							"text": {
+								"text": {
+									"text": "THE ORIGINAL",
+									"font": { "style": "LABEL_DEFAULT", "weight": "MEDIUM" },
+									"color": "CONTENT_PRIMARY"
+								},
+								"predefinedDecorations": null
+							},
+							"type": "text"
+						}
+					],
+					"accessibilityText": "THE ORIGINAL"
+				},
+				"itemAvailabilityState": "UNKNOWN",
+				"catalogItemAnalyticsData": { "catalogSectionItemPosition": 0 },
+				"imageOverlayElements": null,
+				"itemThumbnailElements": null
+			}
+		]
+	}
+]

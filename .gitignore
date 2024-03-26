@@ -3,6 +3,7 @@ instance/*
 !instance/.gitignore
 .webassets-cache
 .env
+.env*
 zuliprc
 
 ### Flask.Python Stack ###
