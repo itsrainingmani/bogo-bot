@@ -20,7 +20,7 @@ Save this file, go to the folder containing `main.py` and run the following:
 
 ```shell
 pip install flask
-flask --app main run --port 8000
+flask --app server run --port 8000
 
 ```
 
