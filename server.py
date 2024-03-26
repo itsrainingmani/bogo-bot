@@ -1,10 +1,22 @@
 import zulip
 from flask import Flask, request
-import json
 from pprint import pprint
+import json
+from dotenv import load_dotenv
+import os
+import supabase
+from supabase import create_client, Client, PostgrestAPIError
+import db_utils
 
-client = zulip.Client(config_file="zuliprc", client=f"RC UberEats BOGO Pairing Bot")
+load_dotenv()
 
+url = os.environ.get("SUPABASE_URL")
+key = os.environ.get("SUPABASE_KEY")
+supabase_client: Client = create_client(url, key)  # type: ignore
+
+zulip_client = zulip.Client(
+    config_file="zuliprc", client=f"RC UberEats BOGO Pairing Bot"
+)
 app = Flask(__name__)
 
 
@@ -18,19 +30,63 @@ def hello_world():
 def handle():
     response = request.get_json()
     pprint(response)
-    sender = response["message"]["sender_full_name"]
-    content = response["message"]["content"]
+    message = response["message"]
+    sender_full_name = message["sender_full_name"]
+    sender_id = message["sender_id"]
+    content = message["content"].lower().strip()
 
-    if content == "about":
-        return {"content": "Hello! This is BOGO bot! Please type 'help' for help!"}
-    elif content == "help":
-        return {
-            "content": """
-Commands:
-  - help: show help
-  - get url: get BOGO url
-  - signup: sign up for this thing
-"""
-        }
+    try:
+        if content == "about":
+            return {"content": "Hello! This is BOGO bot! Please type 'help' for help!"}
+        elif content == "help":
+            return {
+                "content": """
+    Commands:
+    - help: show help
+    - get url: get BOGO url
+    - signup: sign up for this thing
+    """
+            }
+        elif content == "subscribe":
 
-    return {"content": f"hello, {sender}"}
+            user_data = db_utils.get_user(supabase_client, sender_id)
+
+            if len(user_data.data) == 0 or not user_data.data[0]["is_subscribed"]:
+
+                user_data = (
+                    supabase_client.table("users")
+                    .upsert(
+                        {
+                            "zulip_user_id": sender_id,
+                            "zulip_full_name": sender_full_name,
+                            "is_subscribed": True,
+                        }
+                    )
+                    .execute()
+                )
+                return {"content": "You've been subscribed!"}
+
+            else:
+                return {"content": "You've already subscribed, silly!"}
+
+        elif content == "unsubscribe":
+            user_data = db_utils.get_user(supabase_client, sender_id)
+
+            if len(user_data.data) > 0:
+                # update the user flag
+                user_data = (
+                    supabase_client.table("users")
+                    .update({"is_subscribed": False})
+                    .eq("zulip_user_id", sender_id)
+                    .execute()
+                )
+                return {"content": "You've been unsubscribed! BUT WHY?"}
+
+            else:
+                return {"content": "You've never subscribed!"}
+
+    except PostgrestAPIError as e:
+        print(e)
+        return {"content": "Oopsy woopsy, I (or you) made a fucky wucky"}
+
+    return {"content": f"hello, {sender_full_name}"}
