@@ -10,7 +10,6 @@ from flask import Flask, request
 from pprint import pprint
 from dotenv import load_dotenv
 from supabase import create_client, Client, PostgrestAPIError
-UBER_URL = "https://recurse-eats.dim.codes/scraped.json"
 
 try:
     supabase_client: Client = utils.init_supabase_client()
@@ -46,12 +45,7 @@ def handle():
             else:
                 return {"content": "You've never subscribed!"}
         elif content == "show deals":
-            data = requests.get(UBER_URL).text
-            deals_json = json.loads(data)
-
-            processed_deals = utils.get_deals(deals_json)
-            pprint(processed_deals)
-            return {"content": utils.render_deals(deals_json=processed_deals)}
+            return {"content": utils.get_show_deals_message()}
         elif content == "subscribe":
 
             user_data = utils.get_user(supabase_client, sender_id)

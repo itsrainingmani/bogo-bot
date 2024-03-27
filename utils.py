@@ -1,9 +1,13 @@
+import json
 import os
 from pprint import pprint
 import sys
 from typing import Any
 
+import requests
 from supabase import create_client
+
+UBER_URL = "https://recurse-eats.dim.codes/scraped.json"
 
 
 def init_supabase_client():
@@ -43,7 +47,7 @@ def get_deal_info(deal_json: list[dict[str, Any]]):
         {
             "title": deal["title"],
             "description": deal["itemDescription"],
-            "price": deal["priceTagline"]["text"],
+            "price": deal["price"],
             "isSoldOut": deal["isSoldOut"],
             "isAvailable": deal["isAvailable"],
         }
@@ -71,9 +75,32 @@ def get_deals(uber_json):
 
 
 def render_deals(deals_json):
-    return "\n".join(
-        [
-            f" - [{res['name']}]({res['ubereats_link']}) | {res['deals'][0]['title']}"
-            for res in deals_json
-        ]
+    return "Here are today's BOGO deals! Prices are per person.\n" + "\n".join(
+        [render_restaurant_info(res) for res in deals_json]
     )
+
+
+def render_restaurant_info(res):
+    link = render_link(res["name"], res["ubereats_link"])
+    deal_name = res["deals"][0]["title"]
+    formatted_price = f"${res['deals'][0]['price']/200:.2f}"
+    total_deals = f" | {len(res["deals"])} deals" if len(res["deals"]) > 1 else ""
+    deals = "\n".join([render_deal(deal) for deal in res["deals"]])
+    return f" - {link}\n{deals}"
+    # return f" - {link}{total_deals} | {deal_name} | {formatted_price}"
+
+def render_deal(deal):
+    deal_name = deal["title"]
+    formatted_price = f"${deal['price']/200:.2f}"
+    return f"  - {deal_name} | {formatted_price}"
+
+def render_link(text, link):
+    return f"[{text}]({link}?diningMode=PICKUP)"
+
+def get_show_deals_message():
+    data = requests.get(UBER_URL).text
+    deals_json = json.loads(data)
+
+    processed_deals = get_deals(deals_json)
+    pprint(processed_deals)
+    return render_deals(deals_json=processed_deals)

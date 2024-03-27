@@ -19,7 +19,7 @@ for user in subscribed_users.data:
         message_data={
             "type": "private",
             "to": [user["zulip_user_id"]],
-            "content": "heheee 👉🏼👈🏼",
+            "content": utils.get_show_deals_message(),
         }
     )
     pprint(result)
