@@ -10,17 +10,13 @@ from flask import Flask, request
 from pprint import pprint
 from dotenv import load_dotenv
 from supabase import create_client, Client, PostgrestAPIError
-
-load_dotenv()
-
-url = os.environ.get("SUPABASE_URL")
-key = os.environ.get("SUPABASE_KEY")
 UBER_URL = "https://recurse-eats.dim.codes/scraped.json"
 
-if not url or not key:
-    pprint("Supabase Env Variables not present")
+try:
+    supabase_client: Client = utils.init_supabase_client()
+except EnvironmentError as e:
+    print(e)
     sys.exit(1)
-supabase_client: Client = create_client(url, key)
 
 app = Flask(__name__)
 

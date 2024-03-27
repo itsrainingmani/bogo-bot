@@ -1,4 +1,22 @@
+import os
+from pprint import pprint
+import sys
 from typing import Any
+
+from supabase import create_client
+
+
+def init_supabase_client():
+    from dotenv import load_dotenv
+
+    load_dotenv()
+
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_KEY")
+
+    if not url or not key:
+        raise EnvironmentError("Supabase URL or Key not found")
+    return create_client(url, key)
 
 
 def get_user(supabase_client, user_id):
@@ -7,6 +25,14 @@ def get_user(supabase_client, user_id):
         .select("*")
         .eq("zulip_user_id", user_id)
         .execute()
+    )
+
+    return user_data
+
+
+def get_subscribed_users(supabase_client):
+    user_data = (
+        supabase_client.table("users").select("*").eq("is_subscribed", True).execute()
     )
 
     return user_data
