@@ -1,8 +1,10 @@
 import sys
 import zulip
 import os
+import requests
+import json
 
-import db_utils
+import utils
 
 from flask import Flask, request
 from pprint import pprint
@@ -13,6 +15,7 @@ load_dotenv()
 
 url = os.environ.get("SUPABASE_URL")
 key = os.environ.get("SUPABASE_KEY")
+UBER_URL = "https://recurse-eats.dim.codes/scraped.json"
 
 if not url or not key:
     pprint("Supabase Env Variables not present")
@@ -40,9 +43,16 @@ def handle():
     try:
         if content == "about":
             return {"content": "Hello! This is BOGO bot! Please type 'help' for help!"}
+        elif content == "show deals":
+            data = requests.get(UBER_URL).text
+            deals_json = json.loads(data)
+
+            processed_deals = utils.get_deals(deals_json)
+            pprint(processed_deals)
+            return {"content": utils.render_deals(deals_json=processed_deals)}
         elif content == "subscribe":
 
-            user_data = db_utils.get_user(supabase_client, sender_id)
+            user_data = utils.get_user(supabase_client, sender_id)
 
             if len(user_data.data) == 0 or not user_data.data[0]["is_subscribed"]:
 
@@ -63,7 +73,7 @@ def handle():
                 return {"content": "You've already subscribed, silly!"}
 
         elif content == "unsubscribe":
-            user_data = db_utils.get_user(supabase_client, sender_id)
+            user_data = utils.get_user(supabase_client, sender_id)
 
             if len(user_data.data) > 0:
                 # update the user flag
