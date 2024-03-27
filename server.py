@@ -43,6 +43,12 @@ def handle():
     try:
         if content == "about":
             return {"content": "Hello! This is BOGO bot! Please type 'help' for help!"}
+        elif content == "status":
+            user_data = utils.get_user(supabase_client, sender_id)
+            if len(user_data.data) > 0:
+                return {"content": f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"}
+            else:
+                return {"content": "You've never subscribed!"}
         elif content == "show deals":
             data = requests.get(UBER_URL).text
             deals_json = json.loads(data)
@@ -92,6 +98,7 @@ def handle():
                 "content": """
 Commands:
 * `show deals`: to display available BOGO deals
+* `status`: to show your subscription status
 * `subscribe`: to start getting matched with other BOGOBot users for pair lunching
 * `unsubscribe`: to stop getting matched
 """
