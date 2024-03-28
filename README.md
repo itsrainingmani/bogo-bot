@@ -1,32 +1,39 @@
 # RC UberEats BOGO Bot
 
-## To Run
+There are many UberEats Buy One Get One deals available around 397 Bridge St. This is a Zulip bot that will pair lunchers so people can take advantage of the BOGO Deals.
 
-Create Bot in Zulip
-Add the bot to Zulip: <https://zulip.com/help/add-a-bot-or-integration>
+This project is directly inspired by the experience of Recursers at the Brooklyn Hub & by the [RC Eats](https://recurse-eats.dim.codes/) project created by [Angelo Lloti (W2'24)](https://github.com/XdimGG)
 
+## Create Zulip Bot
+
+Add a bot to Zulip by following the instructions here - <https://zulip.com/help/add-a-bot-or-integration#add-a-bot-or-integration_1>
+
+Please make sure that the type of your bot is `Outgoing Webhook` since the bot will be receiving new messages via HTTP POST requests from Zulip.
+
+```text
 name: whatever
 email: whatever
 bot type: outgoing webhook
 endpoint URL: $DOMAIN/webhooks, e.g. `<YOUR-DOMAIN-HERE>.ngrok-free.app/webhooks`
 
 > interface: generic
+```
 
-## Install Flask and Run Bot Server
+## Install Python Requirements
 
-Flask installation instructions: <https://flask.palletsprojects.com/en/3.0.x/installation/#install-flask>
+⚠️ This project uses python 3.12.0. Other python versions are not guaranteed to work.
 
-Save this file, go to the folder containing `main.py` and run the following:
+Install the necessary requirements with -
 
 ```shell
-pip install flask
-flask --app server run --port 8000
-
+pip install -r requirements.txt
 ```
 
 ## Set up ngrok
 
-Use ngrok to serve your localhost server publically. Make an account and get a static URL [https://dashboard.ngrok.com/get-started/setup/macos](here)
+We are using ngrok to serve our localhost server publically. You can use any option (eg. [Tailscale Funnel](https://tailscale.com/kb/1223/funnel), [localtunnel](https://github.com/localtunnel/localtunnel)) that allows you to serve localhost to a static publicly available URL.
+
+Make an account and get a static URL [here](https://dashboard.ngrok.com/get-started/setup/macos)
 
 Example (use your static URL instead):
 
@@ -35,15 +42,29 @@ brew install ngrok/ngrok/ngrok
 ngrok config add-authtoken <TOKEN>
 ```
 
-## Serve localhost
+## Serve Local Web Server
 
 ```shell
 DOMAIN=<YOUR-DOMAIN-HERE>.ngrok-free.app
 PORT=8000
 ngrok http --domain=$DOMAIN $PORT
-
 ```
+
+## Run Flask Server
+
+```shell
+flask --app server run --port 8000
+```
+
+If you'd like to hot-reload your server on code changes, add the `--debug` flag to the above command.
 
 ## DM the bot you created to test
 
-You should be able to get responses to about or help or any message (with "hello world")
+The currently supported commands are -
+
+```markdown
+* `show deals`: to display available BOGO deals
+* `status`: to show your subscription status
+* `subscribe`: to start getting matched with other BOGOBot users for pair lunching
+* `unsubscribe`: to stop getting matched
+```
