@@ -1,15 +1,18 @@
 import sys
-import zulip
-import os
-import requests
-import json
 
 import utils
 
 from flask import Flask, request
 from pprint import pprint
-from dotenv import load_dotenv
-from supabase import create_client, Client, PostgrestAPIError
+from supabase import Client, PostgrestAPIError
+
+COMMANDS = """
+Commands:
+* `show deals`: to display available BOGO deals
+* `status`: to show your subscription status
+* `subscribe`: to start getting matched with other BOGOBot users for pair lunching
+* `unsubscribe`: to stop getting matched
+"""
 
 try:
     supabase_client: Client = utils.init_supabase_client()
@@ -47,11 +50,8 @@ def handle():
         elif content == "show deals":
             return {"content": utils.get_show_deals_message()}
         elif content == "subscribe":
-
             user_data = utils.get_user(supabase_client, sender_id)
-
             if len(user_data.data) == 0 or not user_data.data[0]["is_subscribed"]:
-
                 user_data = (
                     supabase_client.table("users")
                     .upsert(
@@ -84,15 +84,7 @@ def handle():
             else:
                 return {"content": "You've never subscribed!"}
         else:
-            return {
-                "content": """
-Commands:
-* `show deals`: to display available BOGO deals
-* `status`: to show your subscription status
-* `subscribe`: to start getting matched with other BOGOBot users for pair lunching
-* `unsubscribe`: to stop getting matched
-"""
-            }
+            return {"content": COMMANDS}
 
     except PostgrestAPIError as e:
         pprint(e)
