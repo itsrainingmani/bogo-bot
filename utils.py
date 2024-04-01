@@ -82,21 +82,24 @@ def render_deals(deals_json):
 
 def render_restaurant_info(res):
     link = render_link(res["name"], res["ubereats_link"])
-    distance_km = calc_distance(res['geo'])
-    deal_name = res["deals"][0]["title"]
-    formatted_price = f"${res['deals'][0]['price']/200:.2f}"
-    total_deals = f" | {len(res["deals"])} deals" if len(res["deals"]) > 1 else ""
+    distance_km = calc_distance(res["geo"])
+    # deal_name = res["deals"][0]["title"]
+    # formatted_price = f"${res['deals'][0]['price']/200:.2f}"
+    # total_deals = f" | {len(res["deals"])} deals" if len(res["deals"]) > 1 else ""
     deals = "\n".join([render_deal(deal) for deal in res["deals"]])
-    return f" - {link} ({distance_km:.1f} km away)\n{deals}"
+    return f" - {link} ({distance_km:.0f} m away)\n{deals}"
     # return f" - {link}{total_deals} | {deal_name} | {formatted_price}"
+
 
 def render_deal(deal):
     deal_name = deal["title"]
     formatted_price = f"${deal['price']/200:.2f}"
     return f"  - {deal_name} | {formatted_price}"
 
+
 def render_link(text, link):
     return f"[{text}]({link}?diningMode=PICKUP)"
+
 
 def get_show_deals_message():
     data = requests.get(UBER_URL).text
@@ -109,13 +112,14 @@ def get_show_deals_message():
 
 def calc_distance(res_geo):
     from math import radians, sin, cos, sqrt, atan2
+
     rc_coord = (40.69136, -73.9852)
 
-    lat1, lon1, lat2, lon2 = map(radians, [rc_coord[0], rc_coord[1], res_geo["latitude"], res_geo["longitude"]])
-    dlon = lon2 - lon1
-    dlat = lat2 - lat1
+    lat1, lon1, lat2, lon2 = map(
+        radians, [rc_coord[0], rc_coord[1], res_geo["latitude"], res_geo["longitude"]]
+    )
+    dlon, dlat = lon2 - lon1, lat2 - lat1
     a = sin(dlat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(dlon / 2) ** 2
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
-    distance_km = 6371 * c  
-    return distance_km
-
+    distance_m = 6371 * c * 1000
+    return distance_m
