@@ -1,0 +1,6 @@
+jobs:
+  - name: daily-msg-users
+    command: sh run.sh
+    shell: /bin/sh
+    schedule: "30 15 * * *"
+    # schedule: "*/1 * * * *"
