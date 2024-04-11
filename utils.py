@@ -11,10 +11,6 @@ UBER_URL = "https://recurse-eats.dim.codes/scraped.json"
 
 
 def init_supabase_client():
-    from dotenv import load_dotenv
-
-    load_dotenv()
-
     url = os.environ.get("SUPABASE_URL")
     key = os.environ.get("SUPABASE_KEY")
 

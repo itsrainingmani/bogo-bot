@@ -5,6 +5,9 @@ import utils
 from flask import Flask, request
 from pprint import pprint
 from supabase import Client, PostgrestAPIError
+from dotenv import load_dotenv
+
+load_dotenv()
 
 COMMANDS = """
 Commands:
