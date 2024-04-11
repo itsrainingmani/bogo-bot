@@ -16,4 +16,6 @@ COPY . /app
 
 # CMD ["yacron", "-c", "crontab.yml"]
 
-CMD ["python", "server.py"]
+EXPOSE 8000
+
+CMD flask --app server run --port 8000
