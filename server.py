@@ -44,7 +44,9 @@ def handle():
         elif content == "status":
             user_data = utils.get_user(supabase_client, sender_id)
             if len(user_data.data) > 0:
-                return {"content": f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"}
+                return {
+                    "content": f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"
+                }
             else:
                 return {"content": "You've never subscribed!"}
         elif content == "show deals":
