@@ -43,52 +43,33 @@ def handle():
     try:
         if content == "about":
             return {"content": "Hello! This is BOGO bot! Please type 'help' for help!"}
+        
+        elif content == "all subs":
+            all_data = utils.get_subscribed_users(supabase_client)
+            for users in all_data.data:
+                print(users['zulip_full_name'])
+            return {"content": all_data.data}
+        
         elif content == "status":
             user_data = utils.get_user(supabase_client, sender_id)
-            if len(user_data.data) > 0:
-                return {"content": f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"}
-            else:
-                return {"content": "You've never subscribed!"}
+            msg = "You've never subscribed!" if not user_data.data else f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"
+            return {"content": msg}
+            
         elif content == "show deals":
             return {"content": utils.get_show_deals_message()}
+        
         elif content == "subscribe":
-            user_data = utils.get_user(supabase_client, sender_id)
-            if len(user_data.data) == 0 or not user_data.data[0]["is_subscribed"]:
-                user_data = (
-                    supabase_client.table("users")
-                    .upsert(
-                        {
-                            "zulip_user_id": sender_id,
-                            "zulip_full_name": sender_full_name,
-                            "is_subscribed": True,
-                        }
-                    )
-                    .execute()
-                )
-                return {"content": "You've been subscribed!"}
-
-            else:
-                return {"content": "You've already subscribed, silly!"}
+            msg = utils.subscribe_user(supabase_client, sender_id, sender_full_name)
+            return {"content": msg}
 
         elif content == "unsubscribe":
-            user_data = utils.get_user(supabase_client, sender_id)
-
-            if len(user_data.data) > 0:
-                # update the user flag
-                user_data = (
-                    supabase_client.table("users")
-                    .update({"is_subscribed": False})
-                    .eq("zulip_user_id", sender_id)
-                    .execute()
-                )
-                return {"content": "You've been unsubscribed! BUT WHY?"}
-
-            else:
-                return {"content": "You've never subscribed!"}
+            msg = utils.unsubscribe_user(supabase_client, sender_id)
+            return {"content": msg}
             
-        elif content[:8] == 'schedule':
+        elif content.startswith('schedule'):
             user_data = utils.update_user_schedule(supabase_client, sender_id, content)
-            return {"content": f"Your weekly schedule has been updated for {user_data}"}
+            return {"content": f"Your weekly schedule has been updated with {user_data}"}
+        
         else:
             return {"content": COMMANDS}
 
