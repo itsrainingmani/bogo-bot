@@ -68,3 +68,13 @@ The currently supported commands are -
 * `subscribe`: to start getting matched with other BOGOBot users for pair lunching
 * `unsubscribe`: to stop getting matched
 ```
+
+## TO DO
+
+- unit testing
+  - [x] check zulip rc client connection
+  - [x] check supabase connection
+  - [ ] load in testing db
+  - [ ] load in deals json
+
+- integration testing
