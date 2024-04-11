@@ -10,6 +10,8 @@ COMMANDS = """
 Commands:
 * `show deals`: to display available BOGO deals
 * `status`: to show your subscription status
+* `schedule`: to set your weekly pairing schedule
+  * ex. `schedule mon tue thu`, `schedule mon fri`
 * `subscribe`: to start getting matched with other BOGOBot users for pair lunching
 * `unsubscribe`: to stop getting matched
 """
@@ -83,6 +85,10 @@ def handle():
 
             else:
                 return {"content": "You've never subscribed!"}
+            
+        elif content[:8] == 'schedule':
+            user_data = utils.update_user_schedule(supabase_client, sender_id, content)
+            return {"content": f"Your weekly schedule has been updated for {user_data}"}
         else:
             return {"content": COMMANDS}
 

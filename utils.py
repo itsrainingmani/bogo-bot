@@ -61,7 +61,17 @@ def get_todays_users(supabase_client):
 
 
 def update_user_schedule(supabase_client, user_id, schedule):
-    pass
+    valid_days = set(["mon", "tue", "wed", "thu", "fri"])
+    parsed_schedule = [
+        day.lower() for day in schedule[8:].strip().split() if day.lower() in valid_days
+    ]
+    user_data = (
+        supabase_client.table("users")
+        .update({"schedule": " ".join(parsed_schedule)})
+        .eq("zulip_user_id", user_id)
+        .execute()
+    )
+    return " ".join(parsed_schedule)
 
 
 def get_user(supabase_client, user_id):
