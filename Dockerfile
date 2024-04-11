@@ -12,10 +12,6 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 COPY . /app
 
-# RUN chmod +x run.sh
+ENTRYPOINT [ "python" ]
 
-# CMD ["yacron", "-c", "crontab.yml"]
-
-EXPOSE 8000
-
-CMD flask --app server run --port 8000
+CMD ["server.py"]

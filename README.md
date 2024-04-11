@@ -71,6 +71,10 @@ The currently supported commands are -
 
 ## TO DO
 
+- pairing functionality
+  - [ ] determine what pref info to get from users
+  - [ ] structure dat
+
 - unit testing
   - [x] check zulip rc client connection
   - [x] check supabase connection
