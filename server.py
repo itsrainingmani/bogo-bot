@@ -1,3 +1,4 @@
+import os
 import sys
 
 import utils
@@ -5,6 +6,9 @@ import utils
 from flask import Flask, request
 from pprint import pprint
 from supabase import Client, PostgrestAPIError
+from dotenv import load_dotenv
+
+load_dotenv()
 
 COMMANDS = """
 Commands:
@@ -44,7 +48,9 @@ def handle():
         elif content == "status":
             user_data = utils.get_user(supabase_client, sender_id)
             if len(user_data.data) > 0:
-                return {"content": f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"}
+                return {
+                    "content": f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"
+                }
             else:
                 return {"content": "You've never subscribed!"}
         elif content == "show deals":
@@ -89,3 +95,7 @@ def handle():
     except PostgrestAPIError as e:
         pprint(e)
         return {"content": ";-( Something went wrong 🥺 👉🏼👈🏼"}
+
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 8000))
+    app.run(debug=True, host='0.0.0.0', port=port)
