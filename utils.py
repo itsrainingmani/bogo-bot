@@ -1,5 +1,6 @@
 import json
 import os
+import datetime
 from pprint import pprint
 import sys
 from typing import Any
@@ -19,6 +20,60 @@ def init_supabase_client():
     return create_client(url, key)
 
 
+#
+#   DAILY PAIRING
+#
+
+
+def pair_users():
+    # take users off daily pairing Q
+    # put users onto pairing history
+    # message two users in DM
+    pass
+
+
+def check_match_on_queue(supabase_client, lunch_interval, food_pref):
+    # for user on queue, if overlapping lunch_int & overlapping food_pref
+    #   return matching user
+    # else
+    #   return
+    pass
+
+
+def queue_user(supabase_client, user_id, lunch_interval, food_pref):
+    # check for matching users on daily pairing Q
+    #   if match, then pair
+    # else
+    #   post user onto daily pairing Q
+    pass
+
+
+def get_todays_users(supabase_client):
+    weekday = datetime.date.today().weekday()  # m = 0, f = 4
+    # find all users that are subscribed and have no schedule or scheduled for todays day
+    # return list
+    pass
+
+
+#
+#   GET USER INFO FOR SUBSCRIBE/UNSUBSCRIBE
+#
+
+
+def update_user_schedule(supabase_client, user_id, schedule):
+    valid_days = set(["mon", "tue", "wed", "thu", "fri"])
+    parsed_schedule = [
+        day.lower() for day in schedule[8:].strip().split() if day.lower() in valid_days
+    ]
+    user_data = (
+        supabase_client.table("users")
+        .update({"schedule": " ".join(parsed_schedule)})
+        .eq("zulip_user_id", user_id)
+        .execute()
+    )
+    return " ".join(parsed_schedule)
+
+
 def get_user(supabase_client, user_id):
     user_data = (
         supabase_client.table("users")
@@ -26,7 +81,6 @@ def get_user(supabase_client, user_id):
         .eq("zulip_user_id", user_id)
         .execute()
     )
-
     return user_data
 
 
@@ -36,6 +90,11 @@ def get_subscribed_users(supabase_client):
     )
 
     return user_data
+
+
+#
+#   RENDERING DEALS TO USERS
+#
 
 
 def get_deal_info(deal_json: list[dict[str, Any]]):
@@ -52,7 +111,6 @@ def get_deal_info(deal_json: list[dict[str, Any]]):
 
 
 def get_deals(uber_json):
-    # deals = {"restaurant": "some name", "first_deal": "", "total_deals": 5}
     deals = [
         {
             "ubereats_link": res["@id"],
@@ -79,12 +137,8 @@ def render_deals(deals_json):
 def render_restaurant_info(res):
     link = render_link(res["name"], res["ubereats_link"])
     distance_km = calc_distance(res["geo"])
-    # deal_name = res["deals"][0]["title"]
-    # formatted_price = f"${res['deals'][0]['price']/200:.2f}"
-    # total_deals = f" | {len(res["deals"])} deals" if len(res["deals"]) > 1 else ""
     deals = "\n".join([render_deal(deal) for deal in res["deals"]])
     return f" - {link} ({distance_km:.0f} m away)\n{deals}"
-    # return f" - {link}{total_deals} | {deal_name} | {formatted_price}"
 
 
 def render_deal(deal):
@@ -110,7 +164,6 @@ def calc_distance(res_geo):
     from math import radians, sin, cos, sqrt, atan2
 
     rc_coord = (40.69136, -73.9852)
-
     lat1, lon1, lat2, lon2 = map(
         radians, [rc_coord[0], rc_coord[1], res_geo["latitude"], res_geo["longitude"]]
     )
