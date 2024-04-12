@@ -49,10 +49,16 @@ def queue_user(supabase_client, user_id, lunch_interval, food_pref):
 
 
 def get_todays_users(supabase_client):
-    weekday = datetime.date.today().weekday()  # m = 0, f = 4
-    # find all users that are subscribed and have no schedule or scheduled for todays day
-    # return list
-    pass
+    weekday = ["mon", "tue", "wed", "thu", "fri"]
+    today = datetime.date.today().weekday()  # m = 0, f = 4
+    daily_users = (
+        supabase_client.table("users")
+        .select("*")
+        .eq("is_subscribed", True)
+        .or_(f'schedule.is.null, schedule.cs.{{"{weekday[today]}"}}')
+        .execute()
+    )
+    return daily_users
 
 
 #
@@ -67,7 +73,8 @@ def update_user_schedule(supabase_client, user_id, schedule):
     ]
     user_data = (
         supabase_client.table("users")
-        .update({"schedule": " ".join(parsed_schedule)})
+        # .update({"schedule": " ".join(parsed_schedule)})
+        .update({"schedule": parsed_schedule})
         .eq("zulip_user_id", user_id)
         .execute()
     )

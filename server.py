@@ -50,6 +50,11 @@ def handle():
                 print(users['zulip_full_name'])
             return {"content": all_data.data}
         
+        elif content == "today":
+            daily = utils.get_todays_users(supabase_client)
+            return {"content": daily.data}
+
+
         elif content == "status":
             user_data = utils.get_user(supabase_client, sender_id)
             msg = "You've never subscribed!" if not user_data.data else f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"
