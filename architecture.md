@@ -9,6 +9,7 @@
 
 - `show deals`
 - `status`
+- `schedule`
 - `subscribe`
 - `unsubscribe`
 
