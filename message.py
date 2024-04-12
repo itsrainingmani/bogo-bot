@@ -1,12 +1,21 @@
+import os
 from pprint import pprint
 import sys
 from supabase import Client
 import zulip
 import utils
+from dotenv import load_dotenv
+
+load_dotenv()
 
 try:
     supabase_client: Client = utils.init_supabase_client()
-    client = zulip.Client(config_file="zuliprc")
+    client = zulip.Client(
+        api_key=os.environ.get("ZULIP_API_KEY"),
+        email=os.environ.get("ZULIP_EMAIL"),
+        site=os.environ.get("ZULIP_SITE"),
+        # config_file="zuliprc"
+    )
 except (EnvironmentError, zulip.ConfigNotFoundError) as e:
     pprint(e)
     sys.exit(1)

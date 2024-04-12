@@ -68,3 +68,29 @@ The currently supported commands are -
 * `subscribe`: to start getting matched with other BOGOBot users for pair lunching
 * `unsubscribe`: to stop getting matched
 ```
+
+## TO DO
+
+- user functionality
+  - [ ] user scheduling preferences
+
+- pairing functionality
+  - [ ] update command list for when users are in the process of getting paired?
+  - [ ] determine what pref info to get from users
+    - deals are going up and down very frequently, should we present food/deal pref option with the risk it goes down, or do we keep it so people getting paired have an idea of what the other person wants to eat?
+    - i was having a hard time getting the bot to list the deals in a numbered list (stef)
+    - are users on the queue when they respond y to the bot or after they respond with their time/pref info
+    - can they get put on the queue at other times during the day or is this lunch only? if we have dinner too, can people be matched for multiple meals a day?
+    - can people have a command to see who is currently on the queue with time/food pref?
+    - will 15-30 min messages be sent out to people who haven't matched/skipped about who's on the queue?
+  - [x] structure daily database/queue (architecture.md)
+  - [ ] pairing logic - timing, pref, etc
+  - [ ] followup for weekly stats
+
+- unit testing
+  - [x] check zulip rc client connection
+  - [x] check supabase connection
+  - [ ] load in testing db
+  - [ ] load in deals json
+
+- integration testing
