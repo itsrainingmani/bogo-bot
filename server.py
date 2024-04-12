@@ -48,27 +48,34 @@ def handle():
     try:
         if content == "about":
             return {"content": "Hello! This is BOGO bot! Please type 'help' for help!"}
-        
+
         elif content == "all subs":
             all_data = utils.get_subscribed_users(supabase_client)
-            for users in all_data.data:
-                print(users['zulip_full_name'])
-            return {"content": all_data.data}
-        
+            all_users = []
+            if all_data.data:
+                for users in all_data.data:
+                    all_users.append(f" - {users['zulip_full_name']}")
+
+            return {"content": '\n'.join(all_users) if all_users else 'No subscribed users yet!'}
+
         elif content == "today":
             daily = utils.get_todays_users(supabase_client)
             # message.message_group()
-            return {"content": daily.data} 
+            return {"content": daily.data}
 
 
         elif content == "status":
             user_data = utils.get_user(supabase_client, sender_id)
-            msg = "You've never subscribed!" if not user_data.data else f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"
+            msg = ""
+            if user_data.data:
+                msg = f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"
+            else:
+                msg = "You've never subscribed!"
             return {"content": msg}
-            
+
         elif content == "show deals":
             return {"content": utils.get_show_deals_message()}
-        
+
         elif content == "subscribe":
             msg = utils.subscribe_user(supabase_client, sender_id, sender_full_name)
             return {"content": msg}
@@ -76,11 +83,11 @@ def handle():
         elif content == "unsubscribe":
             msg = utils.unsubscribe_user(supabase_client, sender_id)
             return {"content": msg}
-            
+
         elif content.startswith('schedule'):
             user_data = utils.update_user_schedule(supabase_client, sender_id, content)
             return {"content": f"Your weekly schedule has been updated with {user_data}"}
-        
+
         else:
             return {"content": COMMANDS}
 

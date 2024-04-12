@@ -125,7 +125,7 @@ def unsubscribe_user(supabase_client, user_id):
             .eq("zulip_user_id", user_id)
             .execute()
         )
-        return "You've been subscribed! BUT WHY?"
+        return "You've been unsubscribed! BUT WHY?"
     return "You've never been subscribed!"
 
 
