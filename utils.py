@@ -49,29 +49,43 @@ def queue_user(supabase_client, user_id, lunch_interval, food_pref):
 
 
 def get_todays_users(supabase_client):
-    weekday = datetime.date.today().weekday()  # m = 0, f = 4
-    # find all users that are subscribed and have no schedule or scheduled for todays day
-    # return list
-    pass
+    weekday = ["mon", "tue", "wed", "thu", "fri"]
+    today = datetime.date.today().weekday()  # m = 0, f = 4
+    daily_users = (
+        supabase_client.table("users")
+        .select("*")
+        .eq("is_subscribed", True)
+        .or_(f'schedule.is.null, schedule.cs.{{"{weekday[today]}"}}')
+        .execute()
+    )
+    return daily_users
 
 
 #
-#   GET USER INFO FOR SUBSCRIBE/UNSUBSCRIBE
+#   GET USER INFO FOR SUBSCRIBE/UNSUBSCRIBE/SCHEDULE
 #
 
 
 def update_user_schedule(supabase_client, user_id, schedule):
     valid_days = set(["mon", "tue", "wed", "thu", "fri"])
     parsed_schedule = [
-        day.lower() for day in schedule[8:].strip().split() if day.lower() in valid_days
+        day.lower() for day in schedule.strip().split() if day.lower() in valid_days
     ]
     user_data = (
         supabase_client.table("users")
-        .update({"schedule": " ".join(parsed_schedule)})
+        # .update({"schedule": " ".join(parsed_schedule)})
+        .update({"schedule": parsed_schedule})
         .eq("zulip_user_id", user_id)
         .execute()
     )
     return " ".join(parsed_schedule)
+
+
+def get_subscribed_users(supabase_client):
+    user_data = (
+        supabase_client.table("users").select("*").eq("is_subscribed", True).execute()
+    )
+    return user_data
 
 
 def get_user(supabase_client, user_id):
@@ -84,12 +98,35 @@ def get_user(supabase_client, user_id):
     return user_data
 
 
-def get_subscribed_users(supabase_client):
-    user_data = (
-        supabase_client.table("users").select("*").eq("is_subscribed", True).execute()
-    )
+def subscribe_user(supabase_client, user_id, user_full_name):
+    user_data = get_user(supabase_client, user_id)
+    if not user_data.data or not user_data.data[0]["is_subscribed"]:
+        user_data = (
+            supabase_client.table("users")
+            .upsert(
+                {
+                    "zulip_user_id": user_id,
+                    "zulip_full_name": user_full_name,
+                    "is_subscribed": True,
+                }
+            )
+            .execute()
+        )
+        return "You've been subscribed!"
+    return "You've already subscribed, silly!"
 
-    return user_data
+
+def unsubscribe_user(supabase_client, user_id):
+    user_data = get_user(supabase_client, user_id)
+    if user_data.data:
+        user_data = (
+            supabase_client.table("users")
+            .update({"is_subscribed": False})
+            .eq("zulip_user_id", user_id)
+            .execute()
+        )
+        return "You've been unsubscribed! BUT WHY?"
+    return "You've never been subscribed!"
 
 
 #
