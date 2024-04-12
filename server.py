@@ -54,7 +54,7 @@ def handle():
         elif content == "today":
             daily = utils.get_todays_users(supabase_client)
             # message.message_group()
-            return {"content": daily.data}
+            return {"content": daily.data} 
 
 
         elif content == "status":
