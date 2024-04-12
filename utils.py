@@ -32,7 +32,7 @@ def pair_users():
     pass
 
 
-def check_match_on_queue(supabase_client, lunch_interval, food_pref):
+def check_match_on_queue(supabase_client, lunch_interval, food_pref) -> bool:
     # for user on queue, if overlapping lunch_int & overlapping food_pref
     #   return matching user
     # else
@@ -40,12 +40,54 @@ def check_match_on_queue(supabase_client, lunch_interval, food_pref):
     pass
 
 
-def queue_user(supabase_client, user_id, lunch_interval, food_pref):
-    # check for matching users on daily pairing Q
-    #   if match, then pair
-    # else
-    #   post user onto daily pairing Q
-    pass
+def queue_user(supabase_client, user_id, times=None, prefs=None):
+    if prefs:
+        all_prefs = [i for i in "12345"]
+        food_pref = (
+            all_prefs
+            if "all" in prefs
+            else [food for food in prefs if food in all_prefs]
+        )
+        result = (
+            supabase_client.table("daily_q")
+            .update({"food_pref": food_pref})
+            .eq("zulip_user_id", user_id)
+            .execute()
+        )
+
+        # NEED TO CHECK FOR HMATCH HERE. DONT MATCH YOSELF
+        return result.data[0]["food_pref"]
+    elif times:
+        all_times = [ch for ch in "abcd"]
+        time_pref = (
+            all_times
+            if "all" in times
+            else [time for time in times if time in all_times]
+        )
+        result = (
+            supabase_client.table("daily_q")
+            .update({"time_pref": time_pref})
+            .eq("zulip_user_id", user_id)
+            .execute()
+        )
+        return result.data[0]["time_pref"]
+    else:
+        result = (
+            supabase_client.table("daily_q")
+            .upsert(
+                {
+                    "zulip_user_id": user_id,
+                }
+            )
+            .execute()
+        )
+
+    # check if user_id in daily_q
+    # if lunch int, update lunch int in daily_q
+    # if food_pref, update food_pref in daily_q
+    #  check_match_on_queue
+    #       true: pair_users
+    #       false: post on pairing queue, respond with waiting for others
 
 
 def get_todays_users(supabase_client):
@@ -68,9 +110,7 @@ def get_todays_users(supabase_client):
 
 def update_user_schedule(supabase_client, user_id, schedule):
     valid_days = set(["mon", "tue", "wed", "thu", "fri"])
-    parsed_schedule = [
-        day.lower() for day in schedule.strip().split() if day.lower() in valid_days
-    ]
+    parsed_schedule = [day for day in schedule.split() if day in valid_days]
     parsed_schedule = None if not parsed_schedule else parsed_schedule
     user_data = (
         supabase_client.table("users")
@@ -193,7 +233,7 @@ def get_show_deals_message():
     deals_json = json.loads(data)
 
     processed_deals = get_deals(deals_json)
-    pprint(processed_deals)
+    # pprint(processed_deals)
     return render_deals(deals_json=processed_deals)
 
 
