@@ -21,7 +21,7 @@ except (EnvironmentError, zulip.ConfigNotFoundError) as e:
     sys.exit(1)
 
 
-def message_all_subscribers_ind():
+def message_all_subscribers_individually():
     # user_ids = [677939, 690946, 677960]
     subscribed_users = utils.get_subscribed_users(supabase_client)
 
@@ -38,15 +38,16 @@ def message_all_subscribers_ind():
 
 def message_group():
     todays_users = utils.get_todays_users(supabase_client)
-    user_ids = []
-    for user in todays_users.data:
-        user_ids.append(user["zulip_user_id"])
+    user_ids = [user["zulip_user_id"] for user in todays_users]
+
+    # FOR DEV PURPOSES SO WE DONT SPAM EVERYONE
+    user_ids = [677939, 674511]
 
     result = client.send_message(
         message_data={
             "type": "private",
-            "to": [user_ids],
-            "content": "Hello this is a group message test!",
+            "to": user_ids,
+            "content": "Hello this is a pairing message test!",
         }
     )
     pprint(result)

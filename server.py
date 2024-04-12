@@ -2,7 +2,7 @@ import os
 import sys
 
 import utils
-import message
+import message as zulip_message
 
 from flask import Flask, request
 from pprint import pprint
@@ -60,8 +60,8 @@ def handle():
 
         elif content == "today":
             daily = utils.get_todays_users(supabase_client)
-            # message.message_group()
-            return {"content": daily.data}
+            zulip_message.message_group()
+            return {"content": daily.data} 
 
 
         elif content == "status":
