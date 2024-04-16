@@ -1,7 +1,7 @@
 import os
 import pytest
 import zulip
-from utils import init_supabase_client, get_user
+from src.db import BogoDB
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -18,9 +18,12 @@ def test_zulip_client():
 
 
 def test_supabase_connection():
-    supabase = init_supabase_client()
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_KEY")
+    db = BogoDB(url=url, key=key)
     test_user_id = 677939
 
-    test_user_info = get_user(supabase_client=supabase, user_id=test_user_id)
+    test_user_info = db.get_user(user_id=test_user_id)
+    print(test_user_info.data[0])
 
     assert len(test_user_info.data) > 0
