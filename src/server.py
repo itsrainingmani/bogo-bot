@@ -79,6 +79,7 @@ def handle():
             return {"content": "Hello! This is BOGO bot! Please type 'help' for help!"}
 
     ##       DEV RESPONSES          ##
+
         elif content == "today":
             zulip_message.daily_message_blast()
             return {"content": 'testing...'}

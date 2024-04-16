@@ -78,7 +78,7 @@ The currently supported commands are -
 
 - pairing functionality
 
-  - [ ] update command list for when users are in the process of getting paired?
+  - [x] update command list for when users are in the process of getting paired?
   - [x] determine what pref info to get from users
     - deals are going up and down very frequently, should we present food/deal pref option with the risk it goes down, or do we keep it so people getting paired have an idea of what the other person wants to eat?
     - i was having a hard time getting the bot to list the deals in a numbered list (stef)
