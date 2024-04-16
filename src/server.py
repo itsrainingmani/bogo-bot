@@ -3,10 +3,11 @@ import sys
 
 import utils
 import message as zulip_message
+from db import BogoDB
 
 from flask import Flask, request
 from pprint import pprint
-from supabase import Client, PostgrestAPIError
+from supabase import PostgrestAPIError
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -48,7 +49,9 @@ Please response with `pref` followed by the food numbers you'd be willing to get
 
 
 try:
-    supabase_client: Client = utils.init_supabase_client()
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_KEY")
+    db = BogoDB(url=url, key=key)
 except EnvironmentError as e:
     print(e)
     sys.exit(1)
@@ -62,7 +65,7 @@ def hello_world():
     return "<p>RC UberEats BOGO Pairing Bot!</p>"
 
 
-@app.route("/webhooks", methods=["GET", "POST"])
+@app.route("/webhooks", methods=["GET", "POST"]) # type: ignore
 def handle():
     response = request.get_json()
     pprint(response)
@@ -81,19 +84,19 @@ def handle():
             return {"content": 'testing...'}
 
         elif content == "sign me up boss":
-            data = utils.queue_user(supabase_client, sender_id)
+            data = db.queue_user(sender_id)
             return {"content": TIME_COMMANDS}
 
         elif content[:4] == "time":
             time_pref = content[4:].split()
-            response = utils.update_time_preference(supabase_client, sender_id, times=time_pref)
+            response = db.update_time_preference(sender_id, times=time_pref)
             updated_times = [TIME_OPTIONS[ch] for ch in response]
             content_response = f"Your time interval preferences were updated to: {', '.join(updated_times)}\n"
             return {"content": content_response + FOOD_PREF_COMMANDS}
 
         elif content[:4] == 'pref':
             food_pref = content[4:].split()
-            response = utils.update_food_preference(supabase_client, sender_id, prefs=food_pref)
+            response = db.update_food_preference(sender_id, prefs=food_pref)
             updated_prefs = [FOOD_OPTIONS[i].lower() for i in response]
             content_response = f"Your cuisine preferences were updated to: {', '.join(updated_prefs)}\n"
             return {"content": content_response + 'WE CHECKING FOR A MATCH OK'}
@@ -111,7 +114,7 @@ def handle():
             return {"content": SHOW_DEALS_FIRST}
 
         elif content == "all subs":
-            all_data = utils.get_subscribed_users(supabase_client)
+            all_data = db.get_subscribed_users()
             all_users = []
             if all_data.data:
                 for users in all_data.data:
@@ -125,7 +128,7 @@ def handle():
         ##       PRODUCTION RESPONSES        ##
 
         elif content == "status":
-            user_data = utils.get_user(supabase_client, sender_id)
+            user_data = db.get_user(sender_id)
             msg = ""
             if user_data.data:
                 msg = f"You are {"" if user_data.data[0]["is_subscribed"] else "not"} subscribed"
@@ -137,15 +140,15 @@ def handle():
             return {"content": utils.get_show_deals_message()}
 
         elif content == "subscribe":
-            msg = utils.subscribe_user(supabase_client, sender_id, sender_full_name)
+            msg = db.subscribe_user(sender_id, sender_full_name)
             return {"content": msg}
 
         elif content == "unsubscribe":
-            msg = utils.unsubscribe_user(supabase_client, sender_id)
+            msg = db.unsubscribe_user(sender_id)
             return {"content": msg}
 
         elif content.startswith('schedule'):
-            user_data = utils.update_user_schedule(supabase_client, sender_id, content)
+            user_data = db.update_user_schedule(sender_id, content)
             return {"content": f"Your weekly schedule has been updated with {user_data}"}
 
         else:

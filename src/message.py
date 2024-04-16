@@ -1,9 +1,11 @@
 import os
-from pprint import pprint
 import sys
-from supabase import Client
+
+from db import BogoDB
+
 import zulip
-import utils
+from pprint import pprint
+from supabase import Client
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -18,7 +20,9 @@ Hey! This is BOGO bot! If you want to get paired for BOGO deals today, please re
 
 
 try:
-    supabase_client: Client = utils.init_supabase_client()
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_KEY")
+    db = BogoDB(url=url, key=key)
     client = zulip.Client(
         api_key=os.environ.get("ZULIP_API_KEY"),
         email=os.environ.get("ZULIP_EMAIL"),
@@ -36,7 +40,7 @@ except (EnvironmentError, zulip.ConfigNotFoundError) as e:
 
 
 def daily_message_blast():
-    daily_user_ids = utils.get_todays_users(supabase_client)
+    daily_user_ids = db.get_todays_users()
     print(f"actual daily user_ids in daily message blast {daily_user_ids}")
     # daily_user_ids = [677939, 674511]   #mani & stef
     daily_user_ids = [674511]  # stef
