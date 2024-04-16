@@ -100,7 +100,9 @@ def handle():
             updated_prefs = [FOOD_OPTIONS[i].lower() for i in response]
             content_response = f"Your cuisine preferences were updated to: {', '.join(updated_prefs)}\n"
             return {"content": content_response + 'WE CHECKING FOR A MATCH OK'}
-
+        elif content == "queue":
+            maximal_pairs = db.check_match_on_queue()
+            return {"content": 'WE CHECKING FOR A MATCH OK. teehee'}
 
         elif content == "whos hungry":
             pass

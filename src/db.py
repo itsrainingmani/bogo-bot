@@ -1,5 +1,6 @@
 import datetime
-import os
+from itertools import combinations
+from pprint import pprint
 
 from supabase import Client, create_client
 
@@ -16,19 +17,31 @@ class BogoDB:
         # message two users in DM
         pass
 
-    def check_match_on_queue(self, lunch_interval, food_pref) -> bool:
-        print(
-            f"Checking for match on the queue with time pref {lunch_interval} and food preff {food_pref}"
-        )
+    def check_match_on_queue(self) -> bool:
+        # get all users in a queue
         users_in_queue = (
             self.supabase_client.table("daily_q")
             .select("*")
-            .order("created_at", desc=False)
+            .order("q_time", desc=False)
             .execute()
-        )
-        print(datetime.date.today())
-        print(users_in_queue.data[0]["created_at"])
-        print(users_in_queue)
+        ).data
+        user_pairs = combinations([u[0] for u in enumerate(users_in_queue)], 2)
+
+        for u1, u2 in user_pairs:
+
+            # intersection of time for u1 and u2
+            time_intersection = set(users_in_queue[u1]["time_pref"]) & set(
+                users_in_queue[u2]["time_pref"]
+            )
+
+            # intersection of food for u1 and u2
+            food_intersection = set(users_in_queue[u1]["food_pref"]) & set(
+                users_in_queue[u2]["food_pref"]
+            )
+
+            pprint(
+                f"{users_in_queue[u1]['zulip_user_id']} & {users_in_queue[u2]['zulip_user_id']} matched for time - {time_intersection} with food prefs - {food_intersection}"
+            )
         return False
 
     def clear_daily_q(self):
