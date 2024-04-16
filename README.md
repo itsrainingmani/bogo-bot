@@ -63,18 +63,20 @@ If you'd like to hot-reload your server on code changes, add the `--debug` flag 
 The currently supported commands are -
 
 ```markdown
-* `show deals`: to display available BOGO deals
-* `status`: to show your subscription status
-* `subscribe`: to start getting matched with other BOGOBot users for pair lunching
-* `unsubscribe`: to stop getting matched
+- `show deals`: to display available BOGO deals
+- `status`: to show your subscription status
+- `subscribe`: to start getting matched with other BOGOBot users for pair lunching
+- `unsubscribe`: to stop getting matched
 ```
 
 ## TO DO
 
 - user functionality
-  - [ ] user scheduling preferences
+
+  - [x] user scheduling preferences
 
 - pairing functionality
+
   - [ ] update command list for when users are in the process of getting paired?
   - [ ] determine what pref info to get from users
     - deals are going up and down very frequently, should we present food/deal pref option with the risk it goes down, or do we keep it so people getting paired have an idea of what the other person wants to eat?
@@ -88,6 +90,7 @@ The currently supported commands are -
   - [ ] followup for weekly stats
 
 - unit testing
+
   - [x] check zulip rc client connection
   - [x] check supabase connection
   - [ ] load in testing db

@@ -8,6 +8,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
+PAIRING_COMMANDS = """
+Hey! This is BOGO bot! If you want to get paired for BOGO deals today, please respond!
+- `sign me up boss`: yes :money_face:
+- `shaddup`: skip today :pleading_face:
+- `show deals first`: see current deals before deciding, but these change *frequently* throughout the day!
+"""
+
+
 try:
     supabase_client: Client = utils.init_supabase_client()
     client = zulip.Client(
@@ -20,33 +29,39 @@ except (EnvironmentError, zulip.ConfigNotFoundError) as e:
     pprint(e)
     sys.exit(1)
 
+###     PRODUCTION MESSAGES     ###
 
-def message_all_subscribers_ind():
-    # user_ids = [677939, 690946, 677960]
-    subscribed_users = utils.get_subscribed_users(supabase_client)
 
-    for user in subscribed_users.data:
+###     TEST MESSAGES       ###
+
+
+def daily_message_blast():
+    daily_user_ids = utils.get_todays_users(supabase_client)
+    print(f"actual daily user_ids in daily message blast {daily_user_ids}")
+    # daily_user_ids = [677939, 674511]   #mani & stef
+    daily_user_ids = [674511]  # stef
+
+    message_individuals(daily_user_ids, PAIRING_COMMANDS)
+
+
+def message_individuals(user_ids, contents):
+    for user in user_ids:
         result = client.send_message(
             message_data={
                 "type": "private",
-                "to": [user["zulip_user_id"]],
-                "content": utils.get_show_deals_message(),
+                "to": [user],
+                "content": contents,
             }
         )
-        pprint(result)
+        # pprint(result)
 
 
-def message_group():
-    todays_users = utils.get_todays_users(supabase_client)
-    user_ids = []
-    for user in todays_users.data:
-        user_ids.append(user["zulip_user_id"])
-
+def message_group(user_ids, contents):
     result = client.send_message(
         message_data={
             "type": "private",
-            "to": [user_ids],
-            "content": "Hello this is a group message test!",
+            "to": user_ids,
+            "content": contents,
         }
     )
-    pprint(result)
+    # pprint(result)

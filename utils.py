@@ -58,7 +58,7 @@ def get_todays_users(supabase_client):
         .or_(f'schedule.is.null, schedule.cs.{{"{weekday[today]}"}}')
         .execute()
     )
-    return daily_users
+    return [user["zulip_user_id"] for user in daily_users.data]
 
 
 #
@@ -71,14 +71,14 @@ def update_user_schedule(supabase_client, user_id, schedule):
     parsed_schedule = [
         day.lower() for day in schedule.strip().split() if day.lower() in valid_days
     ]
+    parsed_schedule = None if not parsed_schedule else parsed_schedule
     user_data = (
         supabase_client.table("users")
-        # .update({"schedule": " ".join(parsed_schedule)})
-        .update({"schedule": parsed_schedule})
+        .update({"schedule": parsed_schedule, "is_subscribed": True})
         .eq("zulip_user_id", user_id)
         .execute()
     )
-    return " ".join(parsed_schedule)
+    return "all days of the week" if not parsed_schedule else " ".join(parsed_schedule)
 
 
 def get_subscribed_users(supabase_client):

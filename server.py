@@ -2,7 +2,7 @@ import os
 import sys
 
 import utils
-import message
+import message as zulip_message
 
 from flask import Flask, request
 from pprint import pprint
@@ -20,6 +20,12 @@ Commands:
 * `subscribe`: to start getting matched with other BOGOBot users for pair lunching
 * `unsubscribe`: to stop getting matched
 """
+
+SHOW_DEALS_FIRST = utils.get_show_deals_message() + """
+    
+*Would you like to be paired?*
+* `sign me up boss` or `shaddup`
+""" #dont remove the blank line in this...
 
 try:
     supabase_client: Client = utils.init_supabase_client()
@@ -49,6 +55,21 @@ def handle():
         if content == "about":
             return {"content": "Hello! This is BOGO bot! Please type 'help' for help!"}
 
+    ##       DEV RESPONSES          ##
+        elif content == "today":
+            zulip_message.daily_message_blast()
+            return {"content": 'testing...'} 
+        
+        elif content == "sign me up boss":
+            pass
+
+        elif content == "shaddup":
+            return {"content": "Skipping pairing today"}
+
+        elif content == "show deals first":
+            return {"content": SHOW_DEALS_FIRST}
+        
+
         elif content == "all subs":
             all_data = utils.get_subscribed_users(supabase_client)
             all_users = []
@@ -58,11 +79,10 @@ def handle():
 
             return {"content": '\n'.join(all_users) if all_users else 'No subscribed users yet!'}
 
-        elif content == "today":
-            daily = utils.get_todays_users(supabase_client)
-            # message.message_group()
-            return {"content": daily.data}
 
+
+
+        ##       PRODUCTION RESPONSES        ##
 
         elif content == "status":
             user_data = utils.get_user(supabase_client, sender_id)
