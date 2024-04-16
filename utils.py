@@ -57,58 +57,48 @@ def clear_daily_q(supabase_client):
         .execute()
     )
     print(results)
-    # results_date = datetime.datetime.strptime(
-    #     results.data[0]["q_date"], "%Y-%m-%d"
-    # ).date()
-    # print(f"datetime {datetime.date.today()}")
-    # print(f"results_date {results_date}")
-    # print(f"datetime == query {datetime.date.today() == results_date}")
 
 
-def queue_user(supabase_client, user_id, times=None, prefs=None):
-    clear_daily_q(supabase_client)
-    if prefs:
-        all_prefs = [i for i in "12345"]
-        food_pref = (
-            all_prefs
-            if "all" in prefs
-            else [food for food in prefs if food in all_prefs]
-        )
-        result = (
-            supabase_client.table("daily_q")
-            .update({"food_pref": food_pref})
-            .eq("zulip_user_id", user_id)
-            .execute()
-        )
-        check_match_on_queue(
-            supabase_client, result.data[0]["time_pref"], result.data[0]["food_pref"]
-        )
-        # NEED TO CHECK FOR HMATCH HERE. DONT MATCH YOSELF
-        return result.data[0]["food_pref"]
-    elif times:
-        all_times = [ch for ch in "abcd"]
-        time_pref = (
-            all_times
-            if "all" in times
-            else [time for time in times if time in all_times]
-        )
-        result = (
-            supabase_client.table("daily_q")
-            .update({"time_pref": time_pref})
-            .eq("zulip_user_id", user_id)
-            .execute()
-        )
-        return result.data[0]["time_pref"]
-    else:
-        result = (
-            supabase_client.table("daily_q")
-            .upsert(
-                {
-                    "zulip_user_id": user_id,
-                }
-            )
-            .execute()
-        )
+def update_time_preference(supabase_client, user_id, times):
+    queue_user(supabase_client, user_id)
+    all_times = ["a", "b", "c", "d"]
+    time_pref = (
+        all_times if "all" in times else [time for time in times if time in all_times]
+    )
+    result = (
+        supabase_client.table("daily_q")
+        .update({"time_pref": time_pref})
+        .eq("zulip_user_id", user_id)
+        .execute()
+    )
+    return result.data[0]["time_pref"]
+
+
+def update_food_preference(supabase_client, user_id, prefs):
+    queue_user(supabase_client, user_id)
+    all_prefs = ["1", "2", "3", "4", "5"]
+    food_pref = (
+        all_prefs if "all" in prefs else [food for food in prefs if food in all_prefs]
+    )
+    result = (
+        supabase_client.table("daily_q")
+        .update({"food_pref": food_pref})
+        .eq("zulip_user_id", user_id)
+        .execute()
+    )
+    check_match_on_queue(
+        supabase_client, result.data[0]["time_pref"], result.data[0]["food_pref"]
+    )
+    # NEED TO CHECK FOR HMATCH HERE. DONT MATCH YOSELF
+    return result.data[0]["food_pref"]
+
+
+def queue_user(supabase_client, user_id):
+    supabase_client.table("daily_q").upsert(
+        {
+            "zulip_user_id": user_id,
+        }
+    ).execute()
 
     # check if user_id in daily_q
     # if lunch int, update lunch int in daily_q
@@ -241,9 +231,9 @@ def render_deals(deals_json):
 
 def render_restaurant_info(res):
     link = render_link(res["name"], res["ubereats_link"])
-    distance_km = calc_distance(res["geo"])
+    distance_ft = calc_distance(res["geo"])
     deals = "\n".join([render_deal(deal) for deal in res["deals"]])
-    return f" - {link} ({distance_km:.0f} m away)\n{deals}"
+    return f" - {link} ({distance_ft:.0f} ft away)\n{deals}"
 
 
 def render_deal(deal):
@@ -275,5 +265,5 @@ def calc_distance(res_geo):
     dlon, dlat = lon2 - lon1, lat2 - lat1
     a = sin(dlat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(dlon / 2) ** 2
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
-    distance_m = 6371 * c * 1000
-    return distance_m
+    distance_ft = 6371 * c * 1000 * 3.28084
+    return distance_ft
