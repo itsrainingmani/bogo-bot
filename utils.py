@@ -33,14 +33,40 @@ def pair_users():
 
 
 def check_match_on_queue(supabase_client, lunch_interval, food_pref) -> bool:
-    # for user on queue, if overlapping lunch_int & overlapping food_pref
-    #   return matching user
-    # else
-    #   return
+    print(
+        f"Checking for match on the queue with time pref {lunch_interval} and food preff {food_pref}"
+    )
+    users_in_queue = (
+        supabase_client.table("daily_q")
+        .select("*")
+        .order("created_at", desc=False)
+        .execute()
+    )
+    print(datetime.date.today())
+    print(users_in_queue.data[0]["created_at"])
+    print(users_in_queue)
     pass
 
 
+def clear_daily_q(supabase_client):
+    results = (
+        supabase_client.table("daily_q")
+        .select("*")
+        # .delete()
+        .eq("q_date", datetime.date.today())
+        .execute()
+    )
+    print(results)
+    # results_date = datetime.datetime.strptime(
+    #     results.data[0]["q_date"], "%Y-%m-%d"
+    # ).date()
+    # print(f"datetime {datetime.date.today()}")
+    # print(f"results_date {results_date}")
+    # print(f"datetime == query {datetime.date.today() == results_date}")
+
+
 def queue_user(supabase_client, user_id, times=None, prefs=None):
+    clear_daily_q(supabase_client)
     if prefs:
         all_prefs = [i for i in "12345"]
         food_pref = (
@@ -54,7 +80,9 @@ def queue_user(supabase_client, user_id, times=None, prefs=None):
             .eq("zulip_user_id", user_id)
             .execute()
         )
-
+        check_match_on_queue(
+            supabase_client, result.data[0]["time_pref"], result.data[0]["food_pref"]
+        )
         # NEED TO CHECK FOR HMATCH HERE. DONT MATCH YOSELF
         return result.data[0]["food_pref"]
     elif times:
